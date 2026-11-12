@@ -1,0 +1,21 @@
+﻿app.py:475:17: local variable 'e_csv' is assigned to but never used
+pipeline\preprocess_data.py:214:11: f-string is missing placeholders
+pipeline\train_model.py:44:1: 'tensorflow.keras.callbacks.ModelCheckpoint' imported but unused
+pipeline\train_model.py:175:5: local variable 'sessions' is assigned to but never used
+pipeline\train_model.py:456:11: f-string is missing placeholders
+tools\analyze_gesture_span.py:114:5: local variable 'max_speeds' is assigned to but never used
+tools\analyze_gesture_span.py:160:5: local variable 'static_classes' is assigned to but never used
+tools\analyze_gesture_span.py:215:11: f-string is missing placeholders
+tools\analyze_gesture_span.py:217:11: f-string is missing placeholders
+tools\benchmark_fps.py:119:9: local variable 'res' is assigned to but never used
+tools\benchmark_fps.py:141:9: local variable 'res_opt' is assigned to but never used
+tools\check_v3_setup.py:32:9: local variable 'train_sess' is assigned to but never used
+tools\collect_rest_class.py:18:1: 'sys' imported but unused
+tools\collect_rest_class.py:89:5: local variable 'mp_drawing' is assigned to but never used
+tools\compare_mediapipe_settings.py:58:11: f-string is missing placeholders
+tools\diagnose_dau_hoi.py:122:9: local variable 'dau_hoi_idx' is assigned to but never used
+tools\evaluate_loso_seeds.py:3:1: 'sys' imported but unused
+tools\evaluate_loso_seeds.py:22:11: f-string is missing placeholders
+tools\evaluate_loso_seeds.py:24:11: f-string is missing placeholders
+tools\eval_web_events.py:142:11: f-string is missing placeholders
+tools\replay_sample.py:18:1: 'glob' imported but unused

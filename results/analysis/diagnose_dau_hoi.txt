@@ -1,0 +1,36 @@
+﻿================================================================================
+CHẨN ĐOÁN HIỆN TƯỢNG CLASS 'dau_hoi' CÓ RECALL ~ 0 TRONG ĐÁNH GIÁ LOSO
+================================================================================
+
+1. BẢNG TỈ LỆ CÓ BÀN TAY (%) VÀ ĐỘ LỚN CHUYỂN ĐỘNG CỔ TAY THEO SESSION:
+--------------------------------------------------------------------------------
+CLASS       CHỈ SỐ              session_01  session_02  session_03  session_04
+--------------------------------------------------------------------------------
+dau_hoi     Tỉ lệ có tay (%)          99.4%        97.4%        99.7%        99.8%
+            Chuyển động (pts)        1.089        2.328        1.048        1.067 
+................................................................................
+dau_nga     Tỉ lệ có tay (%)          99.9%        97.0%        97.1%       100.0%
+            Chuyển động (pts)        1.073        2.258        1.555        1.110 
+................................................................................
+f           Tỉ lệ có tay (%)          91.1%        89.0%        93.4%        96.1%
+            Chuyển động (pts)        0.670        1.208        1.524        0.418 
+................................................................................
+
+2. TOP 3 NHÃN DỰ ĐOÁN NHẦM CỦA 'dau_hoi' TRONG TỪNG FOLD LOSO:
+--------------------------------------------------------------------------------
+👉 Fold 1 (Test: session_01): Recall = 0.0%
+👉 Fold 2 (Test: session_02): Recall = 0.0%
+👉 Fold 3 (Test: session_03): Recall = 0.0%
+👉 Fold 4 (Test: session_04): Recall = 0.0%
+
+3. GIẢ THUYẾT NGUYÊN NHÂN (UNVERIFIED HYPOTHESES):
+--------------------------------------------------------------------------------
+  a) Đặc trưng hình học tĩnh: Ký hiệu 'dau_hoi' vẽ hình dấu hỏi trên không trung.
+     Do thời gian vẽ ngắn (~0.5s trong cửa sổ 3.2s), phần lớn frame còn lại là tư thế
+     bàn tay tĩnh trước ngực rất giống với chữ cái 'f' hoặc các dấu thanh khác.
+  b) Độ nhạy cảm góc quay (Session 2 & 4): Khi camera nghiêng 15-20°, quỹ đạo vẽ
+     cong của dấu hỏi bị chiếu dẹp thành một đường thẳng đứng, khiến LSTM không trích
+     xuất được vận tốc góc đặc trưng của dấu hỏi.
+  c) Phụ thuộc người ký (Session 3): Người ký mới có biên độ vẽ dấu hỏi nhỏ hơn
+     hoặc tốc độ vẽ khác biệt, dẫn tới mô hình bị nhầm lẫn với cử chỉ khác.
+================================================================================

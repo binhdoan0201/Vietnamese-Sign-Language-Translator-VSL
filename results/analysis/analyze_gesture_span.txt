@@ -1,0 +1,77 @@
+﻿================================================================================
+PHÂN TÍCH ĐỘ DÀI HOẠT ĐỘNG THẬT CỦA CỬ CHỈ (GESTURE SPAN ANALYSIS)
+================================================================================
+Tổng số mẫu phân tích: 5166 mẫu | Số lớp: 43
+
+--------------------------------------------------------------------------------
+1. PHÂN BỐ ĐỘ DÀI HOẠT ĐỘNG TỔNG THỂ (N=5166):
+--------------------------------------------------------------------------------
+Chỉ số                        P10         Median      P90         Mean ± Std        
+Hand present span (frames)    29.0        30.0        30.0        29.5 ± 1.8
+Hand present span (giây)*     3.09        3.20        3.20        3.15 ± 0.19
+Motion span 10% (frames)      5.0         29.0        30.0        23.1 ± 9.6
+Motion span 20% (frames)      4.0         26.0        30.0        20.8 ± 10.2
+Motion span 20% (giây)*       0.43        2.77        3.20        2.22 ± 1.09
+Motion span 30% (frames)      4.0         22.0        30.0        18.8 ± 10.4
+Tỉ lệ đứng yên (% cửa sổ)     0.0         13.3        86.7        30.7 ± 34.1
+  (*) Ghi chú: Thời gian tính theo quy đổi ƯỚC LƯỢNG 3.2s / 30 frame (0.1067s/frame).
+
+--------------------------------------------------------------------------------
+2. PHÂN BỐ ĐỘ DÀI CHUYỂN ĐỘNG (MOTION SPAN 20%) THEO SESSION:
+--------------------------------------------------------------------------------
+Session        Mẫu     Median (frame)    P10 - P90 (frame)     Median (giây)* 
+session_01     1291    29.0              4.0 - 30.0          3.09           
+session_02     1293    21.0              4.0 - 30.0          2.24           
+session_03     1291    26.0              4.0 - 30.0          2.77           
+session_04     1291    26.0              4.0 - 30.0          2.77           
+
+--------------------------------------------------------------------------------
+3. PHÂN LOẠI CLASS ĐỘNG VS CLASS TĨNH:
+--------------------------------------------------------------------------------
+👉 Danh sách class 'ĐỘNG' (chuyển động tập trung < 40% cửa sổ ~ <1.28s) [0 class]:
+   
+
+👉 Danh sách class 'TĨNH' / ÍT CHUYỂN ĐỘNG (chữ cái / tư thế ngón tay đứng yên) [12 class]:
+   i, h, d, l, k, x, u, e, v, dau_nga, y, s
+
+--------------------------------------------------------------------------------
+4. PHÂN TÍCH RIÊNG CLASS 'dau_hoi' QUA 4 SESSIONS:
+--------------------------------------------------------------------------------
+Session        Mẫu     Hand Span (fr)    Motion Span (fr)  Max Speed (pts)   
+session_01     30      30.0              29.0              0.130             
+session_02     30      30.0              23.0              0.229             
+session_03     30      30.0              29.0              0.109             
+session_04     30      30.0              28.0              0.067             
+
+--------------------------------------------------------------------------------
+5. ĐẶC ĐIỂM HOẠT ĐỘNG CỦA TOP 10 CẶP CLASS NHẦM LẪN NHIỀU NHẤT (LOSO Seed 42):
+--------------------------------------------------------------------------------
+True Class     Pred Class     Nhầm    True Motion (fr)  Pred Motion (fr)  True Speed  
+d              o              48      30.0              28.0              0.071       
+n              m              48      24.0              22.5              1.745       
+dau_huyen      z              43      24.0              21.0              0.144       
+o              d              40      28.0              30.0              0.190       
+u              v              36      30.0              30.0              0.093       
+x              k              34      29.0              29.0              0.088       
+m              n              33      22.5              24.0              1.169       
+oo             ee             33      21.0              24.0              0.547       
+c              d              31      28.0              30.0              0.132       
+dau_huyen      j              31      24.0              23.0              0.144       
+
+--------------------------------------------------------------------------------
+6. ƯỚC LƯỢNG ĐỘ TRỄ NẾU CẮT ĐOẠN HOẠT ĐỘNG (GESTURE SPAN ESTIMATION):
+--------------------------------------------------------------------------------
+  - Sàn độ trễ hiện tại (cửa sổ tĩnh 3.2s + 3 confirm): ƯỚC LƯỢNG ~4.0 - 4.5 giây
+  - Độ dài chuyển động trung vị (Median Motion Span): 26.0 frames (2.77 giây)
+  - ƯỚC LƯỢNG độ trễ nếu cắt đoạn hoạt động (Active Span + 3 confirms):
+    t_est = 2.77s + 3 * 0.12s = 3.13 giây
+  - Tiềm năng giảm độ trễ: ~1.07 giây (giảm ~25.4%)
+
+--------------------------------------------------------------------------------
+7. VẼ BIỂU ĐỒ PHÂN BỐ:
+--------------------------------------------------------------------------------
+✓ Đã lưu biểu đồ phân bố: D:\SignLanguageTranslator - Copy\models\eval\gesture_span_distribution.png
+✓ Đã lưu biểu đồ theo session: D:\SignLanguageTranslator - Copy\models\eval\gesture_span_by_session.png
+✓ Đã lưu dữ liệu phân tích JSON: D:\SignLanguageTranslator - Copy\models\eval\gesture_span_analysis.json
+
+✅ HOÀN TẤT PHÂN TÍCH TÁC VỤ 1!

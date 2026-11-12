@@ -1,0 +1,1237 @@
+{
+  "protocol": "P2",
+  "fixed_epochs": 40,
+  "seed": 7,
+  "segment": "none",
+  "augment": "none",
+  "aug_factor": 0,
+  "folds": [
+    {
+      "fold": 1,
+      "test_session": "session_01",
+      "val_session": "session_02",
+      "train_sessions": [
+        "session_03",
+        "session_04"
+      ],
+      "train_samples": 2582,
+      "val_samples": 1293,
+      "test_samples": 1291,
+      "best_epoch": 40,
+      "best_val_accuracy": 0.26759475469589233,
+      "test_accuracy": 0.6746707978311387,
+      "macro_f1": 0.6333245551719859,
+      "classification_report": {
+        "a": {
+          "precision": 0.5,
+          "recall": 0.03333333333333333,
+          "f1-score": 0.0625,
+          "support": 30.0
+        },
+        "aa": {
+          "precision": 1.0,
+          "recall": 0.36666666666666664,
+          "f1-score": 0.5365853658536585,
+          "support": 30.0
+        },
+        "anh_em": {
+          "precision": 0.967741935483871,
+          "recall": 1.0,
+          "f1-score": 0.9836065573770492,
+          "support": 30.0
+        },
+        "anh_hai": {
+          "precision": 0.8823529411764706,
+          "recall": 1.0,
+          "f1-score": 0.9375,
+          "support": 30.0
+        },
+        "anh_ho": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "anh_re": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "anh_ruot": {
+          "precision": 0.8823529411764706,
+          "recall": 1.0,
+          "f1-score": 0.9375,
+          "support": 30.0
+        },
+        "aw": {
+          "precision": 0.9444444444444444,
+          "recall": 0.5666666666666667,
+          "f1-score": 0.7083333333333334,
+          "support": 30.0
+        },
+        "b": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "bo_duong": {
+          "precision": 1.0,
+          "recall": 0.9666666666666667,
+          "f1-score": 0.983050847457627,
+          "support": 30.0
+        },
+        "bo_me": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "c": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "d": {
+          "precision": 0.4727272727272727,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.611764705882353,
+          "support": 30.0
+        },
+        "dao_dien": {
+          "precision": 0.967741935483871,
+          "recall": 1.0,
+          "f1-score": 0.9836065573770492,
+          "support": 30.0
+        },
+        "dau_hoi": {
+          "precision": 0.9230769230769231,
+          "recall": 0.4,
+          "f1-score": 0.5581395348837209,
+          "support": 30.0
+        },
+        "dau_huyen": {
+          "precision": 0.5,
+          "recall": 0.03333333333333333,
+          "f1-score": 0.0625,
+          "support": 30.0
+        },
+        "dau_nang": {
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1-score": 0.5,
+          "support": 30.0
+        },
+        "dau_nga": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "dau_sac": {
+          "precision": 0.6923076923076923,
+          "recall": 0.9,
+          "f1-score": 0.7826086956521738,
+          "support": 30.0
+        },
+        "e": {
+          "precision": 0.4523809523809524,
+          "recall": 0.6333333333333333,
+          "f1-score": 0.5277777777777778,
+          "support": 30.0
+        },
+        "ee": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "f": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1-score": 0.9473684210526316,
+          "support": 30.0
+        },
+        "g": {
+          "precision": 0.4444444444444444,
+          "recall": 0.4,
+          "f1-score": 0.4210526315789474,
+          "support": 30.0
+        },
+        "h": {
+          "precision": 0.8484848484848485,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.888888888888889,
+          "support": 30.0
+        },
+        "i": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "j": {
+          "precision": 0.7692307692307693,
+          "recall": 1.0,
+          "f1-score": 0.8695652173913044,
+          "support": 30.0
+        },
+        "k": {
+          "precision": 0.6739130434782609,
+          "recall": 1.0,
+          "f1-score": 0.8051948051948052,
+          "support": 31.0
+        },
+        "l": {
+          "precision": 0.90625,
+          "recall": 0.9666666666666667,
+          "f1-score": 0.9354838709677419,
+          "support": 30.0
+        },
+        "m": {
+          "precision": 0.7777777777777778,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.8484848484848485,
+          "support": 30.0
+        },
+        "n": {
+          "precision": 0.9166666666666666,
+          "recall": 0.7333333333333333,
+          "f1-score": 0.8148148148148148,
+          "support": 30.0
+        },
+        "o": {
+          "precision": 0.6097560975609756,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.7042253521126761,
+          "support": 30.0
+        },
+        "oo": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "p": {
+          "precision": 0.6904761904761905,
+          "recall": 0.9666666666666667,
+          "f1-score": 0.8055555555555556,
+          "support": 30.0
+        },
+        "qq": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "r": {
+          "precision": 0.8285714285714286,
+          "recall": 0.9666666666666667,
+          "f1-score": 0.8923076923076922,
+          "support": 30.0
+        },
+        "s": {
+          "precision": 0.75,
+          "recall": 0.5,
+          "f1-score": 0.6,
+          "support": 30.0
+        },
+        "u": {
+          "precision": 0.8529411764705882,
+          "recall": 0.9666666666666667,
+          "f1-score": 0.90625,
+          "support": 30.0
+        },
+        "v": {
+          "precision": 0.9629629629629629,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.912280701754386,
+          "support": 30.0
+        },
+        "x": {
+          "precision": 0.15894039735099338,
+          "recall": 0.8,
+          "f1-score": 0.26519337016574585,
+          "support": 30.0
+        },
+        "xin_chao": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "xin_loi": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "y": {
+          "precision": 0.725,
+          "recall": 0.9666666666666667,
+          "f1-score": 0.8285714285714285,
+          "support": 30.0
+        },
+        "z": {
+          "precision": 0.7894736842105263,
+          "recall": 0.5,
+          "f1-score": 0.6122448979591837,
+          "support": 30.0
+        },
+        "accuracy": 0.6746707978311387,
+        "macro avg": {
+          "precision": 0.6563569734715753,
+          "recall": 0.6744186046511627,
+          "f1-score": 0.6333245551719859,
+          "support": 1291.0
+        },
+        "weighted avg": {
+          "precision": 0.6563705722864526,
+          "recall": 0.6746707978311387,
+          "f1-score": 0.6334576847227396,
+          "support": 1291.0
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "test_session": "session_02",
+      "val_session": "session_03",
+      "train_sessions": [
+        "session_04",
+        "session_01"
+      ],
+      "train_samples": 2582,
+      "val_samples": 1291,
+      "test_samples": 1293,
+      "best_epoch": 40,
+      "best_val_accuracy": 0.6460108160972595,
+      "test_accuracy": 0.2962103634957463,
+      "macro_f1": 0.2278336578190236,
+      "classification_report": {
+        "a": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "aa": {
+          "precision": 0.6666666666666666,
+          "recall": 0.06666666666666667,
+          "f1-score": 0.1212121212121212,
+          "support": 30.0
+        },
+        "anh_em": {
+          "precision": 0.12162162162162163,
+          "recall": 0.6,
+          "f1-score": 0.20224719101123598,
+          "support": 30.0
+        },
+        "anh_hai": {
+          "precision": 0.3225806451612903,
+          "recall": 0.967741935483871,
+          "f1-score": 0.48387096774193544,
+          "support": 31.0
+        },
+        "anh_ho": {
+          "precision": 0.7894736842105263,
+          "recall": 1.0,
+          "f1-score": 0.8823529411764706,
+          "support": 30.0
+        },
+        "anh_re": {
+          "precision": 0.30666666666666664,
+          "recall": 0.7666666666666667,
+          "f1-score": 0.4380952380952381,
+          "support": 30.0
+        },
+        "anh_ruot": {
+          "precision": 0.6333333333333333,
+          "recall": 0.6333333333333333,
+          "f1-score": 0.6333333333333333,
+          "support": 30.0
+        },
+        "aw": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "b": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "bo_duong": {
+          "precision": 1.0,
+          "recall": 0.4666666666666667,
+          "f1-score": 0.6363636363636364,
+          "support": 30.0
+        },
+        "bo_me": {
+          "precision": 0.7317073170731707,
+          "recall": 1.0,
+          "f1-score": 0.8450704225352113,
+          "support": 30.0
+        },
+        "c": {
+          "precision": 0.0196078431372549,
+          "recall": 0.03333333333333333,
+          "f1-score": 0.024691358024691357,
+          "support": 30.0
+        },
+        "d": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "dao_dien": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "dau_hoi": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "dau_huyen": {
+          "precision": 0.125,
+          "recall": 0.03333333333333333,
+          "f1-score": 0.052631578947368425,
+          "support": 30.0
+        },
+        "dau_nang": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "dau_nga": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "dau_sac": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "e": {
+          "precision": 0.23076923076923078,
+          "recall": 0.1,
+          "f1-score": 0.13953488372093023,
+          "support": 30.0
+        },
+        "ee": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "f": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "g": {
+          "precision": 0.875,
+          "recall": 0.23333333333333334,
+          "f1-score": 0.3684210526315789,
+          "support": 30.0
+        },
+        "h": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "i": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "j": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "k": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "l": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "m": {
+          "precision": 0.5454545454545454,
+          "recall": 0.4,
+          "f1-score": 0.4615384615384615,
+          "support": 30.0
+        },
+        "n": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "o": {
+          "precision": 0.05434782608695652,
+          "recall": 0.16666666666666666,
+          "f1-score": 0.08196721311475409,
+          "support": 30.0
+        },
+        "oo": {
+          "precision": 0.5,
+          "recall": 0.03333333333333333,
+          "f1-score": 0.0625,
+          "support": 30.0
+        },
+        "p": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "qq": {
+          "precision": 0.208,
+          "recall": 0.8125,
+          "f1-score": 0.33121019108280253,
+          "support": 32.0
+        },
+        "r": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "s": {
+          "precision": 0.09737827715355805,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.1750841750841751,
+          "support": 30.0
+        },
+        "u": {
+          "precision": 0.45454545454545453,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.5882352941176471,
+          "support": 30.0
+        },
+        "v": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "x": {
+          "precision": 1.0,
+          "recall": 0.06666666666666667,
+          "f1-score": 0.125,
+          "support": 30.0
+        },
+        "xin_chao": {
+          "precision": 0.5357142857142857,
+          "recall": 1.0,
+          "f1-score": 0.6976744186046512,
+          "support": 30.0
+        },
+        "xin_loi": {
+          "precision": 1.0,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.9655172413793104,
+          "support": 30.0
+        },
+        "y": {
+          "precision": 1.0,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.9285714285714286,
+          "support": 30.0
+        },
+        "z": {
+          "precision": 0.42105263157894735,
+          "recall": 0.8,
+          "f1-score": 0.5517241379310345,
+          "support": 30.0
+        },
+        "accuracy": 0.2962103634957463,
+        "macro avg": {
+          "precision": 0.2706725588179886,
+          "recall": 0.2948893473368343,
+          "f1-score": 0.2278336578190236,
+          "support": 1293.0
+        },
+        "weighted avg": {
+          "precision": 0.27061576297012113,
+          "recall": 0.2962103634957463,
+          "f1-score": 0.22819157767706727,
+          "support": 1293.0
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "test_session": "session_03",
+      "val_session": "session_04",
+      "train_sessions": [
+        "session_01",
+        "session_02"
+      ],
+      "train_samples": 2584,
+      "val_samples": 1291,
+      "test_samples": 1291,
+      "best_epoch": 40,
+      "best_val_accuracy": 0.17660728096961975,
+      "test_accuracy": 0.7397366382649109,
+      "macro_f1": 0.7141833487371673,
+      "classification_report": {
+        "a": {
+          "precision": 0.8181818181818182,
+          "recall": 0.3,
+          "f1-score": 0.43902439024390244,
+          "support": 30.0
+        },
+        "aa": {
+          "precision": 0.8333333333333334,
+          "recall": 0.16666666666666666,
+          "f1-score": 0.2777777777777778,
+          "support": 30.0
+        },
+        "anh_em": {
+          "precision": 0.967741935483871,
+          "recall": 1.0,
+          "f1-score": 0.9836065573770492,
+          "support": 30.0
+        },
+        "anh_hai": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "anh_ho": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "anh_re": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "anh_ruot": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "aw": {
+          "precision": 0.8,
+          "recall": 0.5333333333333333,
+          "f1-score": 0.64,
+          "support": 30.0
+        },
+        "b": {
+          "precision": 1.0,
+          "recall": 0.16666666666666666,
+          "f1-score": 0.2857142857142857,
+          "support": 30.0
+        },
+        "bo_duong": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "bo_me": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "c": {
+          "precision": 0.9032258064516129,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.9180327868852459,
+          "support": 30.0
+        },
+        "d": {
+          "precision": 1.0,
+          "recall": 0.2,
+          "f1-score": 0.33333333333333337,
+          "support": 30.0
+        },
+        "dao_dien": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "dau_hoi": {
+          "precision": 0.7058823529411765,
+          "recall": 0.4,
+          "f1-score": 0.5106382978723405,
+          "support": 30.0
+        },
+        "dau_huyen": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.9090909090909091,
+          "support": 30.0
+        },
+        "dau_nang": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "dau_nga": {
+          "precision": 0.8108108108108109,
+          "recall": 1.0,
+          "f1-score": 0.8955223880597014,
+          "support": 30.0
+        },
+        "dau_sac": {
+          "precision": 1.0,
+          "recall": 0.9666666666666667,
+          "f1-score": 0.983050847457627,
+          "support": 30.0
+        },
+        "e": {
+          "precision": 0.90625,
+          "recall": 0.9666666666666667,
+          "f1-score": 0.9354838709677419,
+          "support": 30.0
+        },
+        "ee": {
+          "precision": 0.4489795918367347,
+          "recall": 0.7333333333333333,
+          "f1-score": 0.5569620253164558,
+          "support": 30.0
+        },
+        "f": {
+          "precision": 0.8571428571428571,
+          "recall": 0.2,
+          "f1-score": 0.32432432432432434,
+          "support": 30.0
+        },
+        "g": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "h": {
+          "precision": 0.4444444444444444,
+          "recall": 0.13333333333333333,
+          "f1-score": 0.20512820512820512,
+          "support": 30.0
+        },
+        "i": {
+          "precision": 0.7567567567567568,
+          "recall": 0.9032258064516129,
+          "f1-score": 0.823529411764706,
+          "support": 31.0
+        },
+        "j": {
+          "precision": 0.47619047619047616,
+          "recall": 1.0,
+          "f1-score": 0.6451612903225806,
+          "support": 30.0
+        },
+        "k": {
+          "precision": 1.0,
+          "recall": 0.4666666666666667,
+          "f1-score": 0.6363636363636364,
+          "support": 30.0
+        },
+        "l": {
+          "precision": 0.5357142857142857,
+          "recall": 1.0,
+          "f1-score": 0.6976744186046512,
+          "support": 30.0
+        },
+        "m": {
+          "precision": 1.0,
+          "recall": 0.43333333333333335,
+          "f1-score": 0.6046511627906976,
+          "support": 30.0
+        },
+        "n": {
+          "precision": 0.475,
+          "recall": 0.6333333333333333,
+          "f1-score": 0.5428571428571427,
+          "support": 30.0
+        },
+        "o": {
+          "precision": 0.5,
+          "recall": 0.7333333333333333,
+          "f1-score": 0.5945945945945945,
+          "support": 30.0
+        },
+        "oo": {
+          "precision": 0.717948717948718,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.8115942028985509,
+          "support": 30.0
+        },
+        "p": {
+          "precision": 0.5882352941176471,
+          "recall": 1.0,
+          "f1-score": 0.7407407407407407,
+          "support": 30.0
+        },
+        "qq": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "r": {
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1-score": 0.7499999999999999,
+          "support": 30.0
+        },
+        "s": {
+          "precision": 0.6923076923076923,
+          "recall": 0.6,
+          "f1-score": 0.6428571428571429,
+          "support": 30.0
+        },
+        "u": {
+          "precision": 0.2542372881355932,
+          "recall": 1.0,
+          "f1-score": 0.4054054054054054,
+          "support": 30.0
+        },
+        "v": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "x": {
+          "precision": 0.90625,
+          "recall": 0.9666666666666667,
+          "f1-score": 0.9354838709677419,
+          "support": 30.0
+        },
+        "xin_chao": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "xin_loi": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "y": {
+          "precision": 0.5357142857142857,
+          "recall": 1.0,
+          "f1-score": 0.6976744186046512,
+          "support": 30.0
+        },
+        "z": {
+          "precision": 0.967741935483871,
+          "recall": 1.0,
+          "f1-score": 0.9836065573770492,
+          "support": 30.0
+        },
+        "accuracy": 0.7397366382649109,
+        "macro avg": {
+          "precision": 0.7884206903022322,
+          "recall": 0.739609902475619,
+          "f1-score": 0.7141833487371673,
+          "support": 1291.0
+        },
+        "weighted avg": {
+          "precision": 0.7883961636302372,
+          "recall": 0.7397366382649109,
+          "f1-score": 0.7142680474691794,
+          "support": 1291.0
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "test_session": "session_04",
+      "val_session": "session_01",
+      "train_sessions": [
+        "session_02",
+        "session_03"
+      ],
+      "train_samples": 2584,
+      "val_samples": 1291,
+      "test_samples": 1291,
+      "best_epoch": 40,
+      "best_val_accuracy": 0.6460108160972595,
+      "test_accuracy": 0.3175832687838885,
+      "macro_f1": 0.2644632998981091,
+      "classification_report": {
+        "a": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "aa": {
+          "precision": 0.1,
+          "recall": 0.26666666666666666,
+          "f1-score": 0.14545454545454545,
+          "support": 30.0
+        },
+        "anh_em": {
+          "precision": 0.17647058823529413,
+          "recall": 0.1,
+          "f1-score": 0.12765957446808512,
+          "support": 30.0
+        },
+        "anh_hai": {
+          "precision": 1.0,
+          "recall": 0.7666666666666667,
+          "f1-score": 0.8679245283018869,
+          "support": 30.0
+        },
+        "anh_ho": {
+          "precision": 0.7317073170731707,
+          "recall": 1.0,
+          "f1-score": 0.8450704225352113,
+          "support": 30.0
+        },
+        "anh_re": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "anh_ruot": {
+          "precision": 0.9166666666666666,
+          "recall": 0.36666666666666664,
+          "f1-score": 0.5238095238095238,
+          "support": 30.0
+        },
+        "aw": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "b": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "bo_duong": {
+          "precision": 0.9375,
+          "recall": 1.0,
+          "f1-score": 0.967741935483871,
+          "support": 30.0
+        },
+        "bo_me": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "c": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "d": {
+          "precision": 1.0,
+          "recall": 0.4666666666666667,
+          "f1-score": 0.6363636363636364,
+          "support": 30.0
+        },
+        "dao_dien": {
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1-score": 0.888888888888889,
+          "support": 30.0
+        },
+        "dau_hoi": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "dau_huyen": {
+          "precision": 0.3118279569892473,
+          "recall": 0.9666666666666667,
+          "f1-score": 0.47154471544715443,
+          "support": 30.0
+        },
+        "dau_nang": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "dau_nga": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "dau_sac": {
+          "precision": 1.0,
+          "recall": 0.16666666666666666,
+          "f1-score": 0.2857142857142857,
+          "support": 30.0
+        },
+        "e": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "ee": {
+          "precision": 1.0,
+          "recall": 0.06666666666666667,
+          "f1-score": 0.125,
+          "support": 30.0
+        },
+        "f": {
+          "precision": 0.28846153846153844,
+          "recall": 1.0,
+          "f1-score": 0.44776119402985076,
+          "support": 30.0
+        },
+        "g": {
+          "precision": 0.8,
+          "recall": 0.8,
+          "f1-score": 0.8000000000000002,
+          "support": 30.0
+        },
+        "h": {
+          "precision": 0.015873015873015872,
+          "recall": 0.03333333333333333,
+          "f1-score": 0.02150537634408602,
+          "support": 30.0
+        },
+        "i": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 31.0
+        },
+        "j": {
+          "precision": 0.25,
+          "recall": 0.26666666666666666,
+          "f1-score": 0.2580645161290323,
+          "support": 30.0
+        },
+        "k": {
+          "precision": 0.205607476635514,
+          "recall": 0.7333333333333333,
+          "f1-score": 0.32116788321167883,
+          "support": 30.0
+        },
+        "l": {
+          "precision": 0.1,
+          "recall": 0.2,
+          "f1-score": 0.13333333333333333,
+          "support": 30.0
+        },
+        "m": {
+          "precision": 1.0,
+          "recall": 0.03333333333333333,
+          "f1-score": 0.06451612903225806,
+          "support": 30.0
+        },
+        "n": {
+          "precision": 0.30303030303030304,
+          "recall": 1.0,
+          "f1-score": 0.4651162790697675,
+          "support": 30.0
+        },
+        "o": {
+          "precision": 0.10948905109489052,
+          "recall": 1.0,
+          "f1-score": 0.19736842105263158,
+          "support": 30.0
+        },
+        "oo": {
+          "precision": 0.36666666666666664,
+          "recall": 0.36666666666666664,
+          "f1-score": 0.36666666666666664,
+          "support": 30.0
+        },
+        "p": {
+          "precision": 0.9090909090909091,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.7692307692307692,
+          "support": 30.0
+        },
+        "qq": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "r": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "s": {
+          "precision": 0.6666666666666666,
+          "recall": 0.8,
+          "f1-score": 0.7272727272727272,
+          "support": 30.0
+        },
+        "u": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "v": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "x": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "xin_chao": {
+          "precision": 1.0,
+          "recall": 0.03333333333333333,
+          "f1-score": 0.06451612903225806,
+          "support": 30.0
+        },
+        "xin_loi": {
+          "precision": 0.8461538461538461,
+          "recall": 0.7333333333333333,
+          "f1-score": 0.7857142857142856,
+          "support": 30.0
+        },
+        "y": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "z": {
+          "precision": 1.0,
+          "recall": 0.03333333333333333,
+          "f1-score": 0.06451612903225806,
+          "support": 30.0
+        },
+        "accuracy": 0.3175832687838885,
+        "macro avg": {
+          "precision": 0.3729119070380867,
+          "recall": 0.3178294573643411,
+          "f1-score": 0.2644632998981091,
+          "support": 1291.0
+        },
+        "weighted avg": {
+          "precision": 0.3726230519590487,
+          "recall": 0.3175832687838885,
+          "f1-score": 0.26425844838773105,
+          "support": 1291.0
+        }
+      }
+    }
+  ],
+  "summary": {
+    "mean_accuracy": 0.5070502670939211,
+    "std_accuracy": 0.20161274640461826,
+    "mean_macro_f1": 0.45995121540657147,
+    "std_macro_f1": 0.2160939484399621,
+    "best_epochs": [
+      40,
+      40,
+      40,
+      40
+    ],
+    "median_best_epoch": 40,
+    "session_accuracies": {
+      "session_01": 0.6746707978311387,
+      "session_02": 0.2962103634957463,
+      "session_03": 0.7397366382649109,
+      "session_04": 0.3175832687838885
+    }
+  },
+  "top10_confusions": [
+    {
+      "true_class": "d",
+      "predicted_class": "o",
+      "count": 65
+    },
+    {
+      "true_class": "v",
+      "predicted_class": "u",
+      "count": 63
+    },
+    {
+      "true_class": "c",
+      "predicted_class": "o",
+      "count": 61
+    },
+    {
+      "true_class": "m",
+      "predicted_class": "n",
+      "count": 49
+    },
+    {
+      "true_class": "a",
+      "predicted_class": "s",
+      "count": 42
+    },
+    {
+      "true_class": "h",
+      "predicted_class": "k",
+      "count": 36
+    },
+    {
+      "true_class": "n",
+      "predicted_class": "qq",
+      "count": 33
+    },
+    {
+      "true_class": "b",
+      "predicted_class": "o",
+      "count": 32
+    },
+    {
+      "true_class": "e",
+      "predicted_class": "o",
+      "count": 32
+    },
+    {
+      "true_class": "p",
+      "predicted_class": "qq",
+      "count": 31
+    }
+  ]
+}

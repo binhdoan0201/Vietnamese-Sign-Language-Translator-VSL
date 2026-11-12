@@ -1,0 +1,20 @@
+﻿================================================================================
+BENCHMARK SO SÁNH ĐỘ TRỄ SUY LUẬN (INFERENCE LATENCY)
+================================================================================
+✓ Đã nạp 300 mẫu thực tế từ X_all.npy để kiểm thử (shape: (300, 30, 384))
+✓ Đang nạp mô hình từ D:\SignLanguageTranslator - Copy\models\sign_language_model.h5...
+
+--- 1. KIỂM CHỨNG TƯƠNG ĐƯƠNG SỐ HỌC TRÊN 300 SAMPLES ---
+Max |model.predict - direct call| : 0.00e+00
+Max |model.predict - tf.function| : 0.00e+00
+👉 Kết luận tương đương số học (< 1e-5): ✅ PASS
+
+--- 2. ĐO THỜI GIAN SUY LUẬN TRÊN 300 LẦN CHẠY ---
+================================================================================
+PHƯƠNG PHÁP SUY LUẬN               MEAN (ms)      P95 (ms)       TỐC ĐỘ / GIẢM TRỄ
+--------------------------------------------------------------------------------
+1. model.predict(x) (Bản cũ)          59.32 ms        69.62 ms     Baseline
+2. model(x, training=False)          106.47 ms       139.99 ms     Giảm -79.5% trễ
+3. tf.function đã warm-up              1.98 ms         2.27 ms     Giảm  96.7% trễ
+================================================================================
+👉 Khuyến nghị: Sử dụng tf.function / direct call giúp giảm từ 59.3ms xuống 2.0ms (nhanh gấp ~30.0 lần)!

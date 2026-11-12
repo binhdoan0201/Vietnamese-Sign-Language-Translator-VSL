@@ -1,0 +1,22 @@
+# Deep Learning & Computer Vision
+tensorflow==2.16.2
+keras==3.15.1
+mediapipe==0.10.14
+opencv-python==4.9.0.80
+numpy==1.26.4
+scikit-learn==1.3.2
+scipy==1.11.4
+matplotlib==3.11.1
+seaborn==0.13.2
+pillow==12.3.0
+
+# Audio & Text-to-Speech
+pygame==2.6.1
+gTTS==2.5.4
+
+# Web Application Demo
+Flask==3.1.3
+Flask-SocketIO==5.7.2
+python-socketio==5.18.1
+python-engineio==4.15.1
+simple-websocket==1.1.0

@@ -1,0 +1,382 @@
+﻿
+================================================================================
+BẮT ĐẦU ĐÁNH GIÁ LEAVE-ONE-SESSION-OUT (LOSO) 4 FOLDS
+================================================================================
+
+>>> [FOLD 1/4] TEST: session_01 | VAL: session_02 | TRAIN: ['session_03', 'session_04']
+    Train: 2582 | Val: 1293 | Test: 1291
+[SEED] Cố định random seed: 8
+    [Protocol P2] Cố định 40 epochs (không EarlyStopping, đánh giá epoch cuối)
+Epoch 1/40
+162/162 - 5s - 31ms/step - categorical_accuracy: 0.1991 - loss: 3.1171 - val_categorical_accuracy: 0.1964 - val_loss: 3.3065
+Epoch 2/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.5500 - loss: 1.5898 - val_categorical_accuracy: 0.1926 - val_loss: 3.8057
+Epoch 3/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.7413 - loss: 0.9235 - val_categorical_accuracy: 0.2498 - val_loss: 3.7908
+Epoch 4/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.7912 - loss: 0.6998 - val_categorical_accuracy: 0.2212 - val_loss: 4.4549
+Epoch 5/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.8796 - loss: 0.4205 - val_categorical_accuracy: 0.2436 - val_loss: 4.3172
+Epoch 6/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.8943 - loss: 0.3622 - val_categorical_accuracy: 0.2227 - val_loss: 4.8668
+Epoch 7/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9078 - loss: 0.2932 - val_categorical_accuracy: 0.2622 - val_loss: 4.7685
+Epoch 8/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9322 - loss: 0.2368 - val_categorical_accuracy: 0.2560 - val_loss: 4.9031
+Epoch 9/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9307 - loss: 0.2446 - val_categorical_accuracy: 0.2978 - val_loss: 4.2573
+Epoch 10/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9438 - loss: 0.1806 - val_categorical_accuracy: 0.2282 - val_loss: 5.0877
+Epoch 11/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9342 - loss: 0.2219 - val_categorical_accuracy: 0.2599 - val_loss: 4.9286
+Epoch 12/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9566 - loss: 0.1354 - val_categorical_accuracy: 0.2707 - val_loss: 5.3133
+Epoch 13/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9597 - loss: 0.1225 - val_categorical_accuracy: 0.2645 - val_loss: 5.0600
+Epoch 14/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9582 - loss: 0.1337 - val_categorical_accuracy: 0.2800 - val_loss: 4.7981
+Epoch 15/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9721 - loss: 0.0930 - val_categorical_accuracy: 0.3179 - val_loss: 5.1338
+Epoch 16/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9400 - loss: 0.2015 - val_categorical_accuracy: 0.2862 - val_loss: 4.4204
+Epoch 17/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9589 - loss: 0.1299 - val_categorical_accuracy: 0.2715 - val_loss: 5.2421
+Epoch 18/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9795 - loss: 0.0676 - val_categorical_accuracy: 0.2699 - val_loss: 5.1857
+Epoch 19/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9706 - loss: 0.1028 - val_categorical_accuracy: 0.2862 - val_loss: 5.0814
+Epoch 20/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9733 - loss: 0.0922 - val_categorical_accuracy: 0.2452 - val_loss: 5.0750
+Epoch 21/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9318 - loss: 0.2304 - val_categorical_accuracy: 0.2413 - val_loss: 4.8524
+Epoch 22/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9679 - loss: 0.1082 - val_categorical_accuracy: 0.2707 - val_loss: 5.2928
+Epoch 23/40
+162/162 - 3s - 15ms/step - categorical_accuracy: 0.9802 - loss: 0.0608 - val_categorical_accuracy: 0.2784 - val_loss: 5.2467
+Epoch 24/40
+162/162 - 3s - 15ms/step - categorical_accuracy: 0.9857 - loss: 0.0503 - val_categorical_accuracy: 0.2622 - val_loss: 5.1884
+Epoch 25/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9543 - loss: 0.1559 - val_categorical_accuracy: 0.2885 - val_loss: 5.4297
+Epoch 26/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9771 - loss: 0.0740 - val_categorical_accuracy: 0.2320 - val_loss: 6.3765
+Epoch 27/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9911 - loss: 0.0341 - val_categorical_accuracy: 0.2637 - val_loss: 5.7925
+Epoch 28/40
+162/162 - 3s - 15ms/step - categorical_accuracy: 0.9888 - loss: 0.0349 - val_categorical_accuracy: 0.2583 - val_loss: 6.0136
+Epoch 29/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9903 - loss: 0.0302 - val_categorical_accuracy: 0.2506 - val_loss: 6.2673
+Epoch 30/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9717 - loss: 0.0835 - val_categorical_accuracy: 0.2931 - val_loss: 5.1323
+Epoch 31/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9748 - loss: 0.0883 - val_categorical_accuracy: 0.2815 - val_loss: 5.8093
+Epoch 32/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9818 - loss: 0.0567 - val_categorical_accuracy: 0.2761 - val_loss: 6.0896
+Epoch 33/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9686 - loss: 0.0953 - val_categorical_accuracy: 0.2792 - val_loss: 6.1467
+Epoch 34/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9806 - loss: 0.0577 - val_categorical_accuracy: 0.2467 - val_loss: 6.1142
+Epoch 35/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9818 - loss: 0.0557 - val_categorical_accuracy: 0.2343 - val_loss: 6.9848
+Epoch 36/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9756 - loss: 0.0744 - val_categorical_accuracy: 0.2630 - val_loss: 6.3348
+Epoch 37/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9795 - loss: 0.0685 - val_categorical_accuracy: 0.2227 - val_loss: 7.3063
+Epoch 38/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9841 - loss: 0.0518 - val_categorical_accuracy: 0.2699 - val_loss: 5.7212
+Epoch 39/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9876 - loss: 0.0481 - val_categorical_accuracy: 0.2630 - val_loss: 5.8776
+Epoch 40/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9903 - loss: 0.0315 - val_categorical_accuracy: 0.2676 - val_loss: 6.0260
+    -> Evaluated Epoch: 40 (Val Acc: 26.76%)
+    -> Test Accuracy (session_01): 67.47% | Macro-F1: 0.6333
+
+>>> [FOLD 2/4] TEST: session_02 | VAL: session_03 | TRAIN: ['session_04', 'session_01']
+    Train: 2582 | Val: 1291 | Test: 1293
+[SEED] Cố định random seed: 9
+    [Protocol P2] Cố định 40 epochs (không EarlyStopping, đánh giá epoch cuối)
+Epoch 1/40
+162/162 - 5s - 30ms/step - categorical_accuracy: 0.2153 - loss: 3.0169 - val_categorical_accuracy: 0.3447 - val_loss: 2.3769
+Epoch 2/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.5728 - loss: 1.5376 - val_categorical_accuracy: 0.4384 - val_loss: 2.0705
+Epoch 3/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.7285 - loss: 0.9254 - val_categorical_accuracy: 0.5678 - val_loss: 1.5015
+Epoch 4/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.8199 - loss: 0.5984 - val_categorical_accuracy: 0.5290 - val_loss: 1.8316
+Epoch 5/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.8610 - loss: 0.4405 - val_categorical_accuracy: 0.5716 - val_loss: 1.5275
+Epoch 6/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.8943 - loss: 0.3359 - val_categorical_accuracy: 0.6026 - val_loss: 1.3904
+Epoch 7/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9187 - loss: 0.2636 - val_categorical_accuracy: 0.5476 - val_loss: 1.5793
+Epoch 8/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.8978 - loss: 0.3149 - val_categorical_accuracy: 0.5453 - val_loss: 1.8561
+Epoch 9/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9380 - loss: 0.1942 - val_categorical_accuracy: 0.6057 - val_loss: 1.4745
+Epoch 10/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9508 - loss: 0.1410 - val_categorical_accuracy: 0.6282 - val_loss: 1.3703
+Epoch 11/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9547 - loss: 0.1374 - val_categorical_accuracy: 0.6762 - val_loss: 1.3344
+Epoch 12/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9407 - loss: 0.1663 - val_categorical_accuracy: 0.6623 - val_loss: 1.1775
+Epoch 13/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9617 - loss: 0.1089 - val_categorical_accuracy: 0.6600 - val_loss: 1.2589
+Epoch 14/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9202 - loss: 0.2295 - val_categorical_accuracy: 0.5879 - val_loss: 1.6359
+Epoch 15/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9481 - loss: 0.1504 - val_categorical_accuracy: 0.6708 - val_loss: 1.2272
+Epoch 16/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9644 - loss: 0.1274 - val_categorical_accuracy: 0.6754 - val_loss: 1.1242
+Epoch 17/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9648 - loss: 0.1258 - val_categorical_accuracy: 0.6011 - val_loss: 1.6592
+Epoch 18/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9543 - loss: 0.1410 - val_categorical_accuracy: 0.6692 - val_loss: 1.3141
+Epoch 19/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9694 - loss: 0.0992 - val_categorical_accuracy: 0.6266 - val_loss: 1.6779
+Epoch 20/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9558 - loss: 0.1605 - val_categorical_accuracy: 0.6197 - val_loss: 1.4539
+Epoch 21/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9737 - loss: 0.0900 - val_categorical_accuracy: 0.6522 - val_loss: 1.3903
+Epoch 22/40
+162/162 - 3s - 15ms/step - categorical_accuracy: 0.9814 - loss: 0.0593 - val_categorical_accuracy: 0.6538 - val_loss: 1.4464
+Epoch 23/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9764 - loss: 0.0654 - val_categorical_accuracy: 0.6468 - val_loss: 1.4815
+Epoch 24/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9748 - loss: 0.0730 - val_categorical_accuracy: 0.6646 - val_loss: 1.2167
+Epoch 25/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9768 - loss: 0.0653 - val_categorical_accuracy: 0.6414 - val_loss: 1.5346
+Epoch 26/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9562 - loss: 0.1463 - val_categorical_accuracy: 0.6104 - val_loss: 1.5094
+Epoch 27/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9729 - loss: 0.0864 - val_categorical_accuracy: 0.6359 - val_loss: 1.4899
+Epoch 28/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9818 - loss: 0.0582 - val_categorical_accuracy: 0.7080 - val_loss: 1.2076
+Epoch 29/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9841 - loss: 0.0517 - val_categorical_accuracy: 0.6754 - val_loss: 1.3798
+Epoch 30/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9729 - loss: 0.0780 - val_categorical_accuracy: 0.6197 - val_loss: 1.7421
+Epoch 31/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9775 - loss: 0.0645 - val_categorical_accuracy: 0.6243 - val_loss: 1.8285
+Epoch 32/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9721 - loss: 0.0968 - val_categorical_accuracy: 0.6421 - val_loss: 1.6500
+Epoch 33/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9837 - loss: 0.0510 - val_categorical_accuracy: 0.7026 - val_loss: 1.3879
+Epoch 34/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9930 - loss: 0.0271 - val_categorical_accuracy: 0.6863 - val_loss: 1.4343
+Epoch 35/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9644 - loss: 0.1231 - val_categorical_accuracy: 0.6127 - val_loss: 1.6618
+Epoch 36/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9833 - loss: 0.0553 - val_categorical_accuracy: 0.6499 - val_loss: 1.6011
+Epoch 37/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9876 - loss: 0.0383 - val_categorical_accuracy: 0.6747 - val_loss: 1.3748
+Epoch 38/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9954 - loss: 0.0191 - val_categorical_accuracy: 0.6778 - val_loss: 1.4519
+Epoch 39/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9895 - loss: 0.0308 - val_categorical_accuracy: 0.6855 - val_loss: 1.3684
+Epoch 40/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9373 - loss: 0.2102 - val_categorical_accuracy: 0.6460 - val_loss: 1.3801
+    -> Evaluated Epoch: 40 (Val Acc: 64.60%)
+    -> Test Accuracy (session_02): 29.62% | Macro-F1: 0.2278
+
+>>> [FOLD 3/4] TEST: session_03 | VAL: session_04 | TRAIN: ['session_01', 'session_02']
+    Train: 2584 | Val: 1291 | Test: 1291
+[SEED] Cố định random seed: 10
+    [Protocol P2] Cố định 40 epochs (không EarlyStopping, đánh giá epoch cuối)
+Epoch 1/40
+162/162 - 5s - 32ms/step - categorical_accuracy: 0.2005 - loss: 3.0368 - val_categorical_accuracy: 0.1487 - val_loss: 3.3826
+Epoch 2/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.5046 - loss: 1.6566 - val_categorical_accuracy: 0.1108 - val_loss: 3.2850
+Epoch 3/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.6861 - loss: 0.9891 - val_categorical_accuracy: 0.1665 - val_loss: 3.6097
+Epoch 4/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.7492 - loss: 0.7342 - val_categorical_accuracy: 0.1216 - val_loss: 3.8300
+Epoch 5/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.8317 - loss: 0.5086 - val_categorical_accuracy: 0.1270 - val_loss: 4.0388
+Epoch 6/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.8526 - loss: 0.4454 - val_categorical_accuracy: 0.1650 - val_loss: 3.9147
+Epoch 7/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.8827 - loss: 0.3612 - val_categorical_accuracy: 0.1510 - val_loss: 3.9565
+Epoch 8/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9164 - loss: 0.2545 - val_categorical_accuracy: 0.1394 - val_loss: 4.3316
+Epoch 9/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9296 - loss: 0.1986 - val_categorical_accuracy: 0.1294 - val_loss: 4.7284
+Epoch 10/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9087 - loss: 0.2535 - val_categorical_accuracy: 0.1673 - val_loss: 4.6787
+Epoch 11/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9207 - loss: 0.2429 - val_categorical_accuracy: 0.1813 - val_loss: 4.7149
+Epoch 12/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9369 - loss: 0.1790 - val_categorical_accuracy: 0.1983 - val_loss: 4.6383
+Epoch 13/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9385 - loss: 0.1860 - val_categorical_accuracy: 0.1704 - val_loss: 4.7877
+Epoch 14/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9454 - loss: 0.1503 - val_categorical_accuracy: 0.1526 - val_loss: 5.6286
+Epoch 15/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9431 - loss: 0.1688 - val_categorical_accuracy: 0.1712 - val_loss: 4.8649
+Epoch 16/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9520 - loss: 0.1279 - val_categorical_accuracy: 0.1526 - val_loss: 5.2638
+Epoch 17/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9493 - loss: 0.1453 - val_categorical_accuracy: 0.1820 - val_loss: 5.3624
+Epoch 18/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9563 - loss: 0.1210 - val_categorical_accuracy: 0.1774 - val_loss: 5.3610
+Epoch 19/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9690 - loss: 0.0914 - val_categorical_accuracy: 0.1882 - val_loss: 5.4230
+Epoch 20/40
+162/162 - 3s - 15ms/step - categorical_accuracy: 0.9690 - loss: 0.0779 - val_categorical_accuracy: 0.1828 - val_loss: 5.6552
+Epoch 21/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9420 - loss: 0.1762 - val_categorical_accuracy: 0.1534 - val_loss: 5.5204
+Epoch 22/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9578 - loss: 0.1200 - val_categorical_accuracy: 0.1712 - val_loss: 5.7184
+Epoch 23/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9725 - loss: 0.0808 - val_categorical_accuracy: 0.1735 - val_loss: 6.0225
+Epoch 24/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9652 - loss: 0.1020 - val_categorical_accuracy: 0.1712 - val_loss: 5.6564
+Epoch 25/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9222 - loss: 0.2513 - val_categorical_accuracy: 0.1634 - val_loss: 4.9404
+Epoch 26/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9714 - loss: 0.0888 - val_categorical_accuracy: 0.1503 - val_loss: 5.5155
+Epoch 27/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9822 - loss: 0.0466 - val_categorical_accuracy: 0.1402 - val_loss: 5.7478
+Epoch 28/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9748 - loss: 0.0712 - val_categorical_accuracy: 0.1518 - val_loss: 5.6731
+Epoch 29/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9752 - loss: 0.0570 - val_categorical_accuracy: 0.1619 - val_loss: 5.5737
+Epoch 30/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9640 - loss: 0.0985 - val_categorical_accuracy: 0.1557 - val_loss: 5.3889
+Epoch 31/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9721 - loss: 0.0712 - val_categorical_accuracy: 0.1108 - val_loss: 7.0148
+Epoch 32/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9748 - loss: 0.0730 - val_categorical_accuracy: 0.1534 - val_loss: 6.1368
+Epoch 33/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9389 - loss: 0.2004 - val_categorical_accuracy: 0.1255 - val_loss: 6.3834
+Epoch 34/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9563 - loss: 0.1369 - val_categorical_accuracy: 0.1650 - val_loss: 5.4904
+Epoch 35/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9803 - loss: 0.0548 - val_categorical_accuracy: 0.1905 - val_loss: 5.7449
+Epoch 36/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9837 - loss: 0.0352 - val_categorical_accuracy: 0.1898 - val_loss: 5.8913
+Epoch 37/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9841 - loss: 0.0416 - val_categorical_accuracy: 0.1696 - val_loss: 6.0223
+Epoch 38/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9745 - loss: 0.0813 - val_categorical_accuracy: 0.1743 - val_loss: 6.0377
+Epoch 39/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9737 - loss: 0.0706 - val_categorical_accuracy: 0.1464 - val_loss: 6.2666
+Epoch 40/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9822 - loss: 0.0503 - val_categorical_accuracy: 0.1766 - val_loss: 6.2246
+    -> Evaluated Epoch: 40 (Val Acc: 17.66%)
+    -> Test Accuracy (session_03): 73.97% | Macro-F1: 0.7142
+
+>>> [FOLD 4/4] TEST: session_04 | VAL: session_01 | TRAIN: ['session_02', 'session_03']
+    Train: 2584 | Val: 1291 | Test: 1291
+[SEED] Cố định random seed: 11
+    [Protocol P2] Cố định 40 epochs (không EarlyStopping, đánh giá epoch cuối)
+Epoch 1/40
+162/162 - 5s - 30ms/step - categorical_accuracy: 0.2229 - loss: 3.0310 - val_categorical_accuracy: 0.2835 - val_loss: 2.6709
+Epoch 2/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.5430 - loss: 1.5830 - val_categorical_accuracy: 0.4121 - val_loss: 2.3529
+Epoch 3/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.6722 - loss: 1.0110 - val_categorical_accuracy: 0.4547 - val_loss: 2.1758
+Epoch 4/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.7612 - loss: 0.7237 - val_categorical_accuracy: 0.4609 - val_loss: 2.2437
+Epoch 5/40
+162/162 - 3s - 15ms/step - categorical_accuracy: 0.7860 - loss: 0.6359 - val_categorical_accuracy: 0.5167 - val_loss: 1.8620
+Epoch 6/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.8553 - loss: 0.4274 - val_categorical_accuracy: 0.5089 - val_loss: 2.3514
+Epoch 7/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.8622 - loss: 0.4125 - val_categorical_accuracy: 0.4446 - val_loss: 2.9661
+Epoch 8/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.8781 - loss: 0.3386 - val_categorical_accuracy: 0.5593 - val_loss: 1.9096
+Epoch 9/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.8936 - loss: 0.2972 - val_categorical_accuracy: 0.5345 - val_loss: 1.9895
+Epoch 10/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9052 - loss: 0.2620 - val_categorical_accuracy: 0.5825 - val_loss: 2.0189
+Epoch 11/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9102 - loss: 0.2408 - val_categorical_accuracy: 0.5376 - val_loss: 2.0494
+Epoch 12/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9292 - loss: 0.1913 - val_categorical_accuracy: 0.5825 - val_loss: 1.9750
+Epoch 13/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9427 - loss: 0.1515 - val_categorical_accuracy: 0.5724 - val_loss: 1.8680
+Epoch 14/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9141 - loss: 0.2321 - val_categorical_accuracy: 0.5949 - val_loss: 1.4400
+Epoch 15/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9377 - loss: 0.1696 - val_categorical_accuracy: 0.6212 - val_loss: 1.5170
+Epoch 16/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9389 - loss: 0.1633 - val_categorical_accuracy: 0.5391 - val_loss: 1.7213
+Epoch 17/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9392 - loss: 0.1768 - val_categorical_accuracy: 0.5980 - val_loss: 1.6002
+Epoch 18/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9334 - loss: 0.1862 - val_categorical_accuracy: 0.5755 - val_loss: 1.6954
+Epoch 19/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9512 - loss: 0.1411 - val_categorical_accuracy: 0.6375 - val_loss: 1.6094
+Epoch 20/40
+162/162 - 3s - 15ms/step - categorical_accuracy: 0.9520 - loss: 0.1244 - val_categorical_accuracy: 0.6615 - val_loss: 1.6910
+Epoch 21/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9536 - loss: 0.1323 - val_categorical_accuracy: 0.6452 - val_loss: 1.6846
+Epoch 22/40
+162/162 - 3s - 15ms/step - categorical_accuracy: 0.9690 - loss: 0.0927 - val_categorical_accuracy: 0.6359 - val_loss: 1.9130
+Epoch 23/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9683 - loss: 0.0897 - val_categorical_accuracy: 0.6421 - val_loss: 1.7583
+Epoch 24/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9489 - loss: 0.1493 - val_categorical_accuracy: 0.6878 - val_loss: 1.2407
+Epoch 25/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9574 - loss: 0.1168 - val_categorical_accuracy: 0.6383 - val_loss: 1.6284
+Epoch 26/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9702 - loss: 0.0818 - val_categorical_accuracy: 0.6235 - val_loss: 1.8065
+Epoch 27/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9737 - loss: 0.0762 - val_categorical_accuracy: 0.6460 - val_loss: 1.4082
+Epoch 28/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9427 - loss: 0.1689 - val_categorical_accuracy: 0.6266 - val_loss: 1.6574
+Epoch 29/40
+162/162 - 3s - 15ms/step - categorical_accuracy: 0.9687 - loss: 0.0878 - val_categorical_accuracy: 0.6406 - val_loss: 1.5832
+Epoch 30/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9752 - loss: 0.0676 - val_categorical_accuracy: 0.5895 - val_loss: 1.9296
+Epoch 31/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9868 - loss: 0.0422 - val_categorical_accuracy: 0.6468 - val_loss: 1.8637
+Epoch 32/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9822 - loss: 0.0469 - val_categorical_accuracy: 0.5941 - val_loss: 2.2951
+Epoch 33/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9516 - loss: 0.1322 - val_categorical_accuracy: 0.5778 - val_loss: 2.0866
+Epoch 34/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9520 - loss: 0.1475 - val_categorical_accuracy: 0.6204 - val_loss: 1.7211
+Epoch 35/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9644 - loss: 0.1046 - val_categorical_accuracy: 0.6104 - val_loss: 1.9790
+Epoch 36/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9698 - loss: 0.0766 - val_categorical_accuracy: 0.6662 - val_loss: 1.6252
+Epoch 37/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9783 - loss: 0.0611 - val_categorical_accuracy: 0.6088 - val_loss: 2.0906
+Epoch 38/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9834 - loss: 0.0484 - val_categorical_accuracy: 0.6305 - val_loss: 2.0233
+Epoch 39/40
+162/162 - 2s - 15ms/step - categorical_accuracy: 0.9868 - loss: 0.0411 - val_categorical_accuracy: 0.6723 - val_loss: 1.6195
+Epoch 40/40
+162/162 - 3s - 16ms/step - categorical_accuracy: 0.9830 - loss: 0.0479 - val_categorical_accuracy: 0.6460 - val_loss: 1.9112
+    -> Evaluated Epoch: 40 (Val Acc: 64.60%)
+    -> Test Accuracy (session_04): 31.76% | Macro-F1: 0.2645
+
+================================================================================
+BẢNG TỔNG HỢP KẾT QUẢ ĐÁNH GIÁ LEAVE-ONE-SESSION-OUT (LOSO)
+================================================================================
+FOLD  TEST SESSION   TRAIN SESSIONS              BEST EPOCH  ACCURACY    MACRO-F1  
+--------------------------------------------------------------------------------
+1     S01            S03+S04                     40           67.47%     0.6333
+2     S02            S04+S01                     40           29.62%     0.2278
+3     S03            S01+S02                     40           73.97%     0.7142
+4     S04            S02+S03                     40           31.76%     0.2645
+--------------------------------------------------------------------------------
+MEAN ± STD                                       40 (median)  50.71 ± 20.16%  0.4600 ± 0.2161
+================================================================================
+
+--- TOP 10 CẶP CLASS BỊ NHẦM LẪN NHIỀU NHẤT TRONG LOSO ---
+THỰC TẾ (GROUND TRUTH)    -> DỰ ĐOÁN NHẦM (PREDICTED)      SỐ MẪU
+-----------------------------------------------------------------
+d                         -> o                                 65
+v                         -> u                                 63
+c                         -> o                                 61
+m                         -> n                                 49
+a                         -> s                                 42
+h                         -> k                                 36
+n                         -> qq                                33
+b                         -> o                                 32
+e                         -> o                                 32
+p                         -> qq                                31
+
+✓ Đã lưu biểu đồ ma trận nhầm lẫn tổng thể tại: D:\SignLanguageTranslator - Copy\models\eval\confusion_matrix_overall_loso_v3_P2_seed7.png
+✓ Đã lưu kết quả chi tiết tại: D:\SignLanguageTranslator - Copy\models\eval\loso_results_v3_P2_seed7.json

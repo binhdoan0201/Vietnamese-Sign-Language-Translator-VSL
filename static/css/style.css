@@ -1,0 +1,364 @@
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root {
+  --ink-950: #0B1020;
+  --ink-900: #10162C;
+  --ink-850: #151C36;
+  --ink-800: #1B2340;
+
+  --line: rgba(232, 230, 220, 0.10);
+  --line-strong: rgba(232, 230, 220, 0.20);
+
+  --parchment: #ECE8DC;
+  --parchment-dim: #9B98A8;
+
+  --gold: #C9A227;
+  --cyan: #5EEAD4;
+  --cyan-dim: rgba(94, 234, 212, 0.15);
+
+  --font-serif: "IBM Plex Serif", Georgia, serif;
+  --font-sans: "IBM Plex Sans", -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+
+  --radius: 3px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(ellipse at top left, rgba(94, 234, 212, 0.06), transparent 45%),
+    radial-gradient(ellipse at bottom right, rgba(201, 162, 39, 0.05), transparent 50%),
+    repeating-linear-gradient(0deg, transparent, transparent 39px, var(--line) 40px),
+    repeating-linear-gradient(90deg, transparent, transparent 39px, var(--line) 40px),
+    var(--ink-950);
+  color: var(--parchment);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+::selection {
+  background: var(--cyan-dim);
+  color: var(--parchment);
+}
+
+/* ============================================================
+   MASTHEAD
+   ============================================================ */
+.masthead {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 28px 40px 20px;
+  border-bottom: 1px solid var(--line-strong);
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.masthead__title h1 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: 0.01em;
+  margin: 0 0 4px;
+  color: var(--parchment);
+}
+
+.masthead__subtitle {
+  margin: 0;
+  font-size: 13px;
+  color: var(--parchment-dim);
+  max-width: 46ch;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--parchment-dim);
+  padding-bottom: 4px;
+}
+
+.status__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--parchment-dim);
+  box-shadow: 0 0 0 0 rgba(94, 234, 212, 0.5);
+}
+
+.status__dot.live {
+  background: var(--cyan);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(94, 234, 212, 0.45); }
+  70%  { box-shadow: 0 0 0 7px rgba(94, 234, 212, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(94, 234, 212, 0); }
+}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(300px, 1fr);
+  gap: 24px;
+  padding: 28px 40px;
+  align-items: start;
+}
+
+/* ============================================================
+   STAGE (khung camera)
+   ============================================================ */
+.stage__frame {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: #000;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+#video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1); /* mirror hiển thị - không ảnh hưởng dữ liệu gửi lên server */
+  display: block;
+}
+
+#overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Khung góc kiểu ống ngắm - điểm nhấn thị giác chính */
+.corner {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-color: var(--cyan);
+  border-style: solid;
+  border-width: 0;
+  opacity: 0;
+  animation: corner-in 0.6s ease-out forwards;
+}
+
+.corner--tl { top: 12px; left: 12px; border-top-width: 2px; border-left-width: 2px; animation-delay: 0.05s; }
+.corner--tr { top: 12px; right: 12px; border-top-width: 2px; border-right-width: 2px; animation-delay: 0.15s; }
+.corner--bl { bottom: 12px; left: 12px; border-bottom-width: 2px; border-left-width: 2px; animation-delay: 0.25s; }
+.corner--br { bottom: 12px; right: 12px; border-bottom-width: 2px; border-right-width: 2px; animation-delay: 0.35s; }
+
+@keyframes corner-in {
+  from { opacity: 0; transform: scale(0.6); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.stage__progress {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.stage__progress-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--cyan);
+  transition: width 0.15s linear;
+}
+
+.stage__hint {
+  margin: 12px 2px 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--parchment-dim);
+}
+
+/* ============================================================
+   CONSOLE (panel bên phải)
+   ============================================================ */
+.console {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.panel {
+  background: var(--ink-900);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+}
+
+.panel__label {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--parchment-dim);
+  margin: 0 0 14px;
+}
+
+/* --- Bản dịch --- */
+.panel--translation {
+  position: relative;
+  border-left: 2px solid var(--gold);
+}
+
+.translation {
+  font-family: var(--font-serif);
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  min-height: 1.3em;
+  color: var(--parchment);
+}
+
+.translation-conf {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--cyan);
+  margin: 8px 0 0;
+  min-height: 1em;
+}
+
+/* --- Độ tin cậy --- */
+.confidence-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.confidence-row {
+  display: grid;
+  grid-template-columns: 90px 1fr 46px;
+  align-items: center;
+  gap: 10px;
+}
+
+.confidence-row__label {
+  font-size: 13px;
+  color: var(--parchment);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.confidence-row__track {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.confidence-row__fill {
+  height: 100%;
+  width: 0%;
+  background: var(--parchment-dim);
+  transition: width 0.25s ease-out, background 0.25s ease-out;
+}
+
+.confidence-row.is-top .confidence-row__fill {
+  background: var(--cyan);
+}
+
+.confidence-row.is-top .confidence-row__label {
+  color: var(--cyan);
+}
+
+.confidence-row__value {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--parchment-dim);
+  text-align: right;
+}
+
+/* --- Controls --- */
+.panel--controls {
+  padding: 14px 22px;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--parchment-dim);
+  cursor: pointer;
+}
+
+.switch input {
+  accent-color: var(--cyan);
+  width: 16px;
+  height: 16px;
+}
+
+/* ============================================================
+   LOG (footer)
+   ============================================================ */
+.log {
+  border-top: 1px solid var(--line);
+  padding: 12px 40px 16px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--parchment-dim);
+  max-height: 90px;
+  overflow-y: auto;
+}
+
+.log p {
+  margin: 2px 0;
+  opacity: 0.8;
+}
+
+.log p:last-child {
+  opacity: 1;
+  color: var(--cyan);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 860px) {
+  .layout {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .masthead {
+    padding: 20px;
+  }
+  .log {
+    padding: 12px 20px 16px;
+  }
+}
+
+/* ============================================================
+   ACCESSIBILITY
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  .corner, .status__dot.live { animation: none; opacity: 1; }
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}

@@ -1,0 +1,21 @@
+﻿[INFO] Đã nạp 18 dòng sự kiện từ: results/ab_web/run2/web_events_gate_on.csv
+[INFO] Đã nạp 19 từ kỳ vọng từ: expected_words.txt
+
+======================================================================
+KẾT QUẢ ĐÁNH GIÁ SỰ KIỆN NHẬN DẠNG TRÊN GIAO DIỆN WEB
+======================================================================
+Tổng số từ kỳ vọng (Ground Truth)  : 19
+Tổng số sự kiện phát ra (Detected) : 18
+----------------------------------------------------------------------
+  - Đúng (Correct)         :  15 ( 78.9%)
+  - Sai (Substitution)    :   3 ( 15.8%)
+  - Bỏ sót (Deletion)     :   1 (  5.3%)
+  - Dư thừa (Insertion)   :   0 (  0.0%)
+----------------------------------------------------------------------
+Độ trễ phản hồi (t_first_hand_to_output_s):
+  - Trung vị (Median Latency): 7.96 s
+  - Phân vị P90 Latency      : 18.15 s
+----------------------------------------------------------------------
+Các nhãn dư thừa (Spurious/Ghost Detections) hay gặp:
+  (Không có nhãn dư thừa nào)
+======================================================================

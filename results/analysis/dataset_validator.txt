@@ -1,0 +1,53 @@
+﻿--- BẮT ĐẦU KIỂM TRA DATASET TẠI: D:\SignLanguageTranslator - Copy\dataset\raw ---
+
+============================================================
+TỪ VỰNG                  HỢP LỆ / TỔNG SỐ    TRẠNG THÁI
+------------------------------------------------------------
+a                        120/120             ✅ OK
+aa                       120/120             ✅ OK
+anh_em                   120/120             ✅ OK
+anh_hai                  121/121             ✅ OK
+anh_ho                   120/120             ✅ OK
+anh_re                   120/120             ✅ OK
+anh_ruot                 120/120             ✅ OK
+aw                       120/120             ✅ OK
+b                        120/120             ✅ OK
+bo_duong                 120/120             ✅ OK
+bo_me                    120/120             ✅ OK
+c                        120/120             ✅ OK
+d                        120/120             ✅ OK
+dao_dien                 120/120             ✅ OK
+dau_hoi                  120/120             ✅ OK
+dau_huyen                120/120             ✅ OK
+dau_nang                 120/120             ✅ OK
+dau_nga                  120/120             ✅ OK
+dau_sac                  120/120             ✅ OK
+e                        120/120             ✅ OK
+ee                       120/120             ✅ OK
+f                        120/120             ✅ OK
+g                        120/120             ✅ OK
+h                        120/120             ✅ OK
+i                        122/122             ✅ OK
+j                        120/120             ✅ OK
+k                        121/121             ✅ OK
+l                        120/120             ✅ OK
+m                        120/120             ✅ OK
+n                        120/120             ✅ OK
+o                        120/120             ✅ OK
+oo                       120/120             ✅ OK
+p                        120/120             ✅ OK
+qq                       122/122             ✅ OK
+r                        120/120             ✅ OK
+s                        120/120             ✅ OK
+u                        120/120             ✅ OK
+v                        120/120             ✅ OK
+x                        120/120             ✅ OK
+xin_chao                 120/120             ✅ OK
+xin_loi                  120/120             ✅ OK
+y                        120/120             ✅ OK
+z                        120/120             ✅ OK
+============================================================
+Tổng số sample hợp lệ : 5166
+Tổng số lỗi / cảnh báo: 0
+
+✅ Tuyệt vời! Toàn bộ dataset đều hợp lệ và đúng chuẩn (30, 1662).

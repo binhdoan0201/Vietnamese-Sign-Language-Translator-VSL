@@ -1,0 +1,14 @@
+﻿
+======================================================================
+THỐNG KÊ SỰ KIỆN BỊ CỔNG CHUYỂN ĐỘNG CHẶN (WEB GATE BLOCKED)
+======================================================================
+Tổng số sự kiện bị chặn : 3
+
+1. Phân loại theo Gate State:
+  - closed_low_motion     :   2 ( 66.7%)
+  - closed_no_hand        :   1 ( 33.3%)
+
+2. Top các nhãn bị chặn nhiều nhất (would_be_action):
+  - 'anh_em': 2 lần
+  - 'm': 1 lần
+======================================================================

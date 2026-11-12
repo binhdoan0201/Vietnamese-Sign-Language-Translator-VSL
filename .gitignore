@@ -1,0 +1,76 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual Environments
+.venv/
+.venv*/
+venv/
+ENV/
+env/
+
+# Datasets (Raw và Processed không theo dõi trong git repo công khai)
+dataset/raw/
+dataset/processed/
+
+# Release Assets và Gói trung gian
+release_assets/
+incoming/
+archive/
+
+# Zip files và Model binaries
+*.zip
+*.h5
+!models/sign_language_model.h5
+
+# Reports, Plans và Cleanup tracking files
+REPORT*.md
+CLEANUP_PLAN.md
+changes.diff
+cleanup_moves.csv
+tree_*.txt
+tools/undo_cleanup.ps1
+
+# Generated Audio files (gTTS tự sinh)
+audio/*.mp3
+
+# Runtime logs (giữ lại logs/.gitkeep để duy trì thư mục)
+logs/*
+!logs/.gitkeep
+
+# Temporary & backup files
+*.tmp
+*.bak
+
+# C environments & distribution
+*.so
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini

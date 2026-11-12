@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nhận diện Ngôn ngữ Ký hiệu</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead__title">
+    <h1>Ngôn ngữ Ký hiệu</h1>
+    <p class="masthead__subtitle">Hệ thống nhận diện thời gian thực bằng thị giác máy tính</p>
+  </div>
+  <div class="status">
+    <span class="status__dot" id="statusDot"></span>
+    <span id="statusText">Đang kết nối&hellip;</span>
+  </div>
+</header>
+
+<main class="layout">
+
+  <section class="stage" id="stage">
+    <div class="stage__frame">
+      <video id="video" autoplay playsinline muted></video>
+      <canvas id="overlay"></canvas>
+
+      <span class="corner corner--tl"></span>
+      <span class="corner corner--tr"></span>
+      <span class="corner corner--bl"></span>
+      <span class="corner corner--br"></span>
+
+      <div class="stage__progress">
+        <div class="stage__progress-bar" id="bufferBar"></div>
+      </div>
+    </div>
+    <p class="stage__hint" id="stageHint">Đưa tay vào khung hình để bắt đầu</p>
+  </section>
+
+  <aside class="console">
+
+    <div class="panel panel--translation">
+      <h2 class="panel__label">Bản dịch hiện tại</h2>
+      <p class="translation" id="translationText">&mdash;</p>
+      <p class="translation-conf" id="translationConf"></p>
+    </div>
+
+    <div class="panel panel--confidence">
+      <h2 class="panel__label">Độ tin cậy theo từ</h2>
+      <ul class="confidence-list" id="confidenceList"></ul>
+    </div>
+
+    <div class="panel panel--controls">
+      <label class="switch">
+        <input type="checkbox" id="soundToggle" checked>
+        <span>Phát âm thanh</span>
+      </label>
+    </div>
+
+  </aside>
+
+</main>
+
+<footer class="log" id="log">
+  <p>&gt; đang khởi tạo hệ thống&hellip;</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

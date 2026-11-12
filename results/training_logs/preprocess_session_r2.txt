@@ -1,0 +1,118 @@
+﻿[SEED] Đã cố định random seed: 42
+Phát hiện 43 classes: ['a', 'aa', 'anh_em', 'anh_hai', 'anh_ho', 'anh_re', 'anh_ruot', 'aw', 'b', 'bo_duong', 'bo_me', 'c', 'd', 'dao_dien', 'dau_hoi', 'dau_huyen', 'dau_nang', 'dau_nga', 'dau_sac', 'e', 'ee', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'oo', 'p', 'qq', 'r', 's', 'u', 'v', 'x', 'xin_chao', 'xin_loi', 'y', 'z']
+
+--- ĐANG GOM VÀ TIỀN XỬ LÝ DỮ LIỆU ---
+  [a] -> 120 samples hợp lệ
+  [aa] -> 120 samples hợp lệ
+  [anh_em] -> 120 samples hợp lệ
+  [anh_hai] -> 121 samples hợp lệ
+  [anh_ho] -> 120 samples hợp lệ
+  [anh_re] -> 120 samples hợp lệ
+  [anh_ruot] -> 120 samples hợp lệ
+  [aw] -> 120 samples hợp lệ
+  [b] -> 120 samples hợp lệ
+  [bo_duong] -> 120 samples hợp lệ
+  [bo_me] -> 120 samples hợp lệ
+  [c] -> 120 samples hợp lệ
+  [d] -> 120 samples hợp lệ
+  [dao_dien] -> 120 samples hợp lệ
+  [dau_hoi] -> 120 samples hợp lệ
+  [dau_huyen] -> 120 samples hợp lệ
+  [dau_nang] -> 120 samples hợp lệ
+  [dau_nga] -> 120 samples hợp lệ
+  [dau_sac] -> 120 samples hợp lệ
+  [e] -> 120 samples hợp lệ
+  [ee] -> 120 samples hợp lệ
+  [f] -> 120 samples hợp lệ
+  [g] -> 120 samples hợp lệ
+  [h] -> 120 samples hợp lệ
+  [i] -> 122 samples hợp lệ
+  [j] -> 120 samples hợp lệ
+  [k] -> 121 samples hợp lệ
+  [l] -> 120 samples hợp lệ
+  [m] -> 120 samples hợp lệ
+  [n] -> 120 samples hợp lệ
+  [o] -> 120 samples hợp lệ
+  [oo] -> 120 samples hợp lệ
+  [p] -> 120 samples hợp lệ
+  [qq] -> 122 samples hợp lệ
+  [r] -> 120 samples hợp lệ
+  [s] -> 120 samples hợp lệ
+  [u] -> 120 samples hợp lệ
+  [v] -> 120 samples hợp lệ
+  [x] -> 120 samples hợp lệ
+  [xin_chao] -> 90 samples hợp lệ
+  [xin_loi] -> 60 samples hợp lệ
+  [y] -> 120 samples hợp lệ
+  [z] -> 120 samples hợp lệ
+
+================================================================================
+BẢNG THỐNG KÊ SỐ MẪU HỢP LỆ (CLASS x SESSION)
+================================================================================
+CLASS                  session_01   session_02   session_03   session_04      TỔNG
+--------------------------------------------------------------------------------
+a                              30           30           30           30       120
+aa                             30           30           30           30       120
+anh_em                         30           30           30           30       120
+anh_hai                        30           31           30           30       121
+anh_ho                         30           30           30           30       120
+anh_re                         30           30           30           30       120
+anh_ruot                       30           30           30           30       120
+aw                             30           30           30           30       120
+b                              30           30           30           30       120
+bo_duong                       30           30           30           30       120
+bo_me                          30           30           30           30       120
+c                              30           30           30           30       120
+d                              30           30           30           30       120
+dao_dien                       30           30           30           30       120
+dau_hoi                        30           30           30           30       120
+dau_huyen                      30           30           30           30       120
+dau_nang                       30           30           30           30       120
+dau_nga                        30           30           30           30       120
+dau_sac                        30           30           30           30       120
+e                              30           30           30           30       120
+ee                             30           30           30           30       120
+f                              30           30           30           30       120
+g                              30           30           30           30       120
+h                              30           30           30           30       120
+i                              30           30           31           31       122
+j                              30           30           30           30       120
+k                              31           30           30           30       121
+l                              30           30           30           30       120
+m                              30           30           30           30       120
+n                              30           30           30           30       120
+o                              30           30           30           30       120
+oo                             30           30           30           30       120
+p                              30           30           30           30       120
+qq                             30           32           30           30       122
+r                              30           30           30           30       120
+s                              30           30           30           30       120
+u                              30           30           30           30       120
+v                              30           30           30           30       120
+x                              30           30           30           30       120
+xin_chao                        0           30           30           30        90
+xin_loi                         0           30            0           30        60
+y                              30           30           30           30       120
+z                              30           30           30           30       120
+================================================================================
+
+⚠️  CÁC CẢNH BÁO VỀ SỐ LƯỢNG MẪU VÀ SESSION:
+  - Class 'xin_chao' THIẾU hoàn toàn 'session_01' (0 mẫu)!
+  - Class 'xin_loi' THIẾU hoàn toàn 'session_01' (0 mẫu)!
+  - Class 'xin_loi' THIẾU hoàn toàn 'session_03' (0 mẫu)!
+
+--- THÔNG SỐ TOÀN BỘ DATASET ---
+Kích thước X_all      : (5076, 30, 384) (kỳ vọng: N, 30, 384)
+Kích thước X_raw258   : (5076, 30, 258) (kỳ vọng: N, 30, 258)
+Kích thước y_all      : (5076, 43)
+Kích thước session_all: (5076,)
+Tổng sample bị bỏ qua : 0
+✓ Đã lưu X_all.npy, X_raw258_all.npy, y_all.npy, session_all.npy vào dataset/processed/
+
+--- PHÂN CHIA THEO SESSION (Test: session_04) ---
+Train sessions: ['session_01', 'session_02', 'session_03']
+Test session  : ['session_04']
+Train samples: 3785
+Test samples : 1291
+
+✅ Hoàn tất tiền xử lý và lưu dữ liệu vào dataset/processed/

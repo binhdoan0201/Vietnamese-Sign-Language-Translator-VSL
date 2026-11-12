@@ -1,0 +1,12 @@
+﻿======================================================================
+BẮT ĐẦU KIỂM THỬ TOÁN HỌC: TEMPORAL RESAMPLING (TEST_TEMPORAL_UTILS)
+======================================================================
+  [✅ PASS] Output Shape (30, 258)
+  [✅ PASS] Chuỗi hằng số (Constant Sequence)
+  [✅ PASS] Chuỗi tuyến tính (Linear Sequence)
+  [✅ PASS] Bảo toàn tay vắng mặt (Absent Hand Preservation)
+  [✅ PASS] Khử nhiễu thời gian Jitter (Jittered Timestamps)
+  [✅ PASS] Xử lý chuỗi ngắn < 2 frames (Short Input Fallback)
+======================================================================
+TỔNG KẾT: TẤT CẢ TEST PASS (6/6)
+======================================================================

@@ -1,0 +1,2 @@
+# Development & Static Code Analysis
+pyflakes==4.1.0
