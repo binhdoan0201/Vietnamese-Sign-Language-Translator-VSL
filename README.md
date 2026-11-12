@@ -45,7 +45,7 @@ Dữ liệu: **5.166 mẫu** (43 lớp × 4 session × ~30 mẫu/session), mỗi
 Nhằm phục vụ cộng đồng nghiên cứu và phát triển thêm, dự án phát hành bộ dữ liệu mở **VSL 258-Landmark**:
 * **Quyền riêng tư & Kích thước đặc trưng:** Dữ liệu chỉ gồm **258 chiều** (tư thế thân trên 132 + tay trái 63 + tay phải 63), **loại bỏ hoàn toàn 1.404 điểm khuôn mặt (Face Mesh)** để bảo vệ danh tính người tham gia ký và loại bỏ nhiễu chiều dữ liệu.
 * **Quy mô:** **5.166 mẫu** trên 43 lớp ký hiệu × 4 session thu thập độc lập.
-* **Liên kết tải dữ liệu:** [Tải bộ dữ liệu vsl_landmarks_258_v1.zip](<CHƯA CÓ>) *(Lưu ý: URL tải sẽ do tác giả cung cấp khi xuất bản)*.
+* **Liên kết tải dữ liệu:** [Tải bộ dữ liệu vsl_landmarks_258_v1.zip](https://github.com/binhdoan0201/Vietnamese-Sign-Language-Translator-VSL/releases/tag/v1.0) *(Lưu ý: URL tải sẽ do tác giả cung cấp khi xuất bản)*.
 * **Kiểm tra tính toàn vẹn dữ liệu tải về:**
   ```powershell
   python tools/verify_dataset.py release_assets/dataset_public
