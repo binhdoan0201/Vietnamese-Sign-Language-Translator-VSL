@@ -236,49 +236,35 @@ Trong 34 lần cổng chặn ở lượt 2 (`results/ab_web/run2/web_gate_blocke
 ```text
 SignLanguageTranslator/
 ├── README.md
+├── CONTRIBUTING.md
+├── LICENSE
 ├── requirements.txt
 ├── requirements-dev.txt           # Công cụ phát triển & kiểm tra mã tĩnh (pyflakes)
 ├── dictionary.json                # nhãn → tiếng Việt có dấu
 ├── expected_words.txt             # danh sách từ dùng cho đánh giá trên web
-├── CLEANUP_PLAN.md                # kế hoạch dọn dẹp và phân loại file
-├── cleanup_moves.csv              # nhật ký truy vết các file đã di chuyển
 │
 ├── app.py                         # Web demo (Flask + SocketIO)
 ├── realtime_test.py               # Bản Desktop (OpenCV + Pygame)
 ├── feature_utils.py               # Trích xuất & chuẩn hóa đặc trưng
 ├── temporal_utils.py              # Nội suy theo thời gian, làm mượt dự đoán
 │
-├── pipeline/
-│   ├── data_collector.py
-│   ├── preprocess_data.py
-│   ├── train_model.py
-│   ├── augment_utils.py
-│   ├── segment_utils.py
-│   └── web_logging.py
-│
-├── tools/                         # Kiểm tra, đánh giá, phân tích, undo_cleanup.ps1
-├── tests/                         # Kiểm thử tự động (18 unit tests)
-│
-├── dataset/
-│   ├── raw/                       # dữ liệu thô 43 từ x 4 session (5.166 mẫu)
-│   └── processed/                 # dữ liệu đã tiền xử lý (tái tạo được)
+├── pipeline/                      # Thu thập, tiền xử lý, huấn luyện, augment
+├── tools/                         # Kiểm tra dữ liệu, đánh giá, phân tích, xuất dữ liệu công khai
+├── tests/                         # Kiểm thử tự động
 │
 ├── models/
 │   ├── sign_language_model.h5     # mô hình LSTM chính thức
-│   └── eval/                      # kết quả LOSO (21 JSON) và ma trận nhầm lẫn P2
+│   └── eval/                      # kết quả LOSO (JSON) và ma trận nhầm lẫn
 │
 ├── results/                       # bằng chứng cho báo cáo (xem results/INDEX.md)
-│   ├── ab_web/                    # nhật ký & đánh giá A/B cổng chuyển động
+│   ├── ab_web/                    # nhật ký & đánh giá A/B cổng chuyển động (run1, run2)
 │   ├── analysis/                  # phân tích FPS, suy luận, landmark, độ dài cử chỉ
 │   └── training_logs/             # log huấn luyện LOSO và tiền xử lý
+│
+├── static/  templates/            # giao diện web
+├── dataset/                       # chỉ có README: dữ liệu tải riêng (xem mục "Dữ liệu mở")
 ├── logs/                          # nhật ký khi chạy web (giữ .gitkeep)
-├── audio/  static/  templates/
-└── archive/                       # công cụ và file cũ, bản sao lưu
-    ├── models_backup/             # bản sao lưu model qua các vòng
-    ├── models_eval_extra/         # ảnh biểu đồ của các cấu hình thử nghiệm phụ
-    ├── review_packages/          # các gói zip đánh giá vòng trước
-    ├── tools/                     # các script một lần, đã hoàn thành nhiệm vụ
-    └── README_old.md              # bản sao lưu README trước dọn dẹp
+└── audio/                         # âm thanh tự sinh khi chạy (giữ .gitkeep)            # bản sao lưu README trước dọn dẹp
 ```
 
 ---
