@@ -492,4 +492,6 @@ if __name__ == '__main__':
     print("\n" + "=" * 60)
     print("  SERVER ĐANG CHẠY: http://127.0.0.1:5000")
     print("=" * 60 + "\n")
-    socketio.run(app, host='0.0.0.0', port=5000, debug=False, use_reloader=False)
+    # allow_unsafe_werkzeug=True: cần thiết với Flask-SocketIO >= 5.1 khi chạy bằng Werkzeug dev server
+    socketio.run(app, host='0.0.0.0', port=5000, debug=False, use_reloader=False,
+                 allow_unsafe_werkzeug=True)
