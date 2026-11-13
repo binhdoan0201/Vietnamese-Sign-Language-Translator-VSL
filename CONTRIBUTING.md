@@ -59,3 +59,14 @@ Cảm ơn bạn đã quan tâm đóng góp cho dự án **SignLanguageTranslator
 - [ ] Huấn luyện lớp "nghỉ" (idle/rest class) tự nhiên trong mô hình để giảm phụ thuộc vào cổng chuyển động ở tầng ứng dụng.
 - [ ] Rút ngắn cửa sổ thời gian (ví dụ từ 3.2s xuống 1.5s - 2.0s) bằng cách thu thập cử chỉ theo nhịp nhanh hơn.
 - [ ] Thử nghiệm các kiến trúc học sâu không-thời gian tiên tiến hơn (ST-GCN, 1D-CNN + BiLSTM, Transformers) hoặc chuyển đổi mô hình sang TFLite để chạy tối ưu trên thiết bị di động.
+
+---
+
+## 5. Lưu ý về Công cụ Nội bộ Dành cho Tác giả (Author-only Tools)
+
+Trong thư mục `tools/`, một số tập lệnh được thiết kế phục vụ quy trình chuẩn bị dữ liệu gốc của tác giả (yêu cầu dữ liệu thô 1662 chiều đầy đủ):
+- `tools/export_public_dataset.py`: Trích xuất và xuất gói dữ liệu mở 258 chiều từ dữ liệu thô ban đầu.
+- `tools/prove_equivalence.py`: Thực nghiệm chứng minh tính tương đương số học giữa pipeline từ dữ liệu thô và dữ liệu mở.
+
+Người dùng và cộng đồng nghiên cứu chỉ cần sử dụng bộ dữ liệu mở 258 chiều đã giải nén vào `dataset/raw` cùng các tập lệnh chính (`tools/verify_dataset.py`, `pipeline/preprocess_data.py`, `pipeline/train_model.py`, `app.py`).
+

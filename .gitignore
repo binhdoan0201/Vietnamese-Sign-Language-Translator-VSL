@@ -11,9 +11,14 @@ venv/
 ENV/
 env/
 
-# Datasets (Raw và Processed không theo dõi trong git repo công khai)
-dataset/raw/
-dataset/processed/
+# Datasets (Chỉ theo dõi tài liệu trong dataset/, không theo dõi dữ liệu)
+dataset/*
+!dataset/README.md
+!dataset/DATASET_CARD.md
+!dataset/LICENSE-DATA
+
+# Verification logs (Dành cho kiểm chứng bản phát hành)
+verify_logs/
 
 # Release Assets và Gói trung gian
 release_assets/

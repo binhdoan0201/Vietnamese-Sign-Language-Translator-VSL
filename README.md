@@ -45,19 +45,37 @@ Dữ liệu: **5.166 mẫu** (43 lớp × 4 session × ~30 mẫu/session), mỗi
 Nhằm phục vụ cộng đồng nghiên cứu và phát triển thêm, dự án phát hành bộ dữ liệu mở **VSL 258-Landmark**:
 * **Quyền riêng tư & Kích thước đặc trưng:** Dữ liệu chỉ gồm **258 chiều** (tư thế thân trên 132 + tay trái 63 + tay phải 63), **loại bỏ hoàn toàn 1.404 điểm khuôn mặt (Face Mesh)** để bảo vệ danh tính người tham gia ký và loại bỏ nhiễu chiều dữ liệu.
 * **Quy mô:** **5.166 mẫu** trên 43 lớp ký hiệu × 4 session thu thập độc lập.
-* **Liên kết tải dữ liệu:** [Tải bộ dữ liệu vsl_landmarks_258_v1.zip](https://github.com/binhdoan0201/Vietnamese-Sign-Language-Translator-VSL/releases/tag/v1.0) *(Lưu ý: URL tải sẽ do tác giả cung cấp khi xuất bản)*.
-* **Kiểm tra tính toàn vẹn dữ liệu tải về:**
+* **Liên kết tải dữ liệu:** [Tải bộ dữ liệu vsl_landmarks_258_v1.zip](https://github.com/binhdoan0201/Vietnamese-Sign-Language-Translator-VSL/releases/tag/v1.0)
+* **Hướng dẫn tải và giải nén vào `dataset/raw`:**
+  - **Windows (Command Prompt):**
+    ```cmd
+    mkdir dataset\raw
+    tar -xf vsl_landmarks_258_v1.zip -C dataset\raw
+    ```
+  - **Windows (PowerShell):**
+    ```powershell
+    Expand-Archive vsl_landmarks_258_v1.zip -DestinationPath dataset\raw
+    ```
+  - **Linux / macOS:**
+    ```bash
+    mkdir -p dataset/raw && unzip vsl_landmarks_258_v1.zip -d dataset/raw
+    ```
+* **Kiểm tra tính toàn vẹn dữ liệu sau giải nén:**
   ```powershell
-  python tools/verify_dataset.py release_assets/dataset_public
+  python tools/verify_dataset.py dataset/raw
   ```
-* **Huấn luyện trực tiếp từ dữ liệu công khai:**
+* **Tiền xử lý dữ liệu cho huấn luyện:**
   ```powershell
-  python pipeline/preprocess_data.py --input-dir release_assets/dataset_public --mode session --test-session 4
+  python pipeline/preprocess_data.py --mode session --test-session 4
   ```
+* **Chi tiết bộ dữ liệu & giấy phép:** Xem [Thẻ mô tả dữ liệu (DATASET_CARD.md)](dataset/DATASET_CARD.md) và [Giấy phép dữ liệu (LICENSE-DATA)](dataset/LICENSE-DATA) (CC BY 4.0).
 
 ---
 
 ## ⚡ 4. Cài đặt & chạy nhanh
+
+> [!TIP]
+> **Chạy demo KHÔNG cần tải dữ liệu:** Dự án đã tích hợp sẵn mô hình huấn luyện `models/sign_language_model.h5` và danh sách lớp `models/classes.json`. Bạn có thể chạy demo ngay lập tức mà không cần tải hay giải nén bộ dữ liệu.
 
 Dự án có sẵn mô hình đã huấn luyện `models/sign_language_model.h5` (huấn luyện trên toàn bộ 5.166 mẫu, 40 epoch), có thể chạy ngay.
 
@@ -139,7 +157,7 @@ Bốn session ứng với bốn điều kiện quay khác nhau (xem `SCENARIOS` 
 ### 5.2 Kiểm tra dữ liệu
 ```powershell
 .\.venv\Scripts\python.exe tools/dataset_validator.py
-.\.venv\Scripts\python.exe tools/replay_sample.py dataset/raw/xin_chao/session_01/sample_001.npy
+.\.venv\Scripts\python.exe tools/replay_sample.py dataset/raw/xin_chao/session_01/sample_001.npy  # (dành cho dữ liệu thô 1662 chiều của tác giả)
 ```
 
 ### 5.3 Tiền xử lý
@@ -240,31 +258,34 @@ SignLanguageTranslator/
 ├── LICENSE
 ├── requirements.txt
 ├── requirements-dev.txt           # Công cụ phát triển & kiểm tra mã tĩnh (pyflakes)
-├── dictionary.json                # nhãn → tiếng Việt có dấu
-├── expected_words.txt             # danh sách từ dùng cho đánh giá trên web
+├── dictionary.json                # Nhãn → tiếng Việt có dấu
+├── expected_words.txt             # Danh sách từ dùng cho đánh giá trên web
 │
 ├── app.py                         # Web demo (Flask + SocketIO)
 ├── realtime_test.py               # Bản Desktop (OpenCV + Pygame)
-├── feature_utils.py               # Trích xuất & chuẩn hóa đặc trưng
+├── feature_utils.py               # Trích xuất & chuẩn hóa đặc trưng (kèm dự phòng 43 lớp)
 ├── temporal_utils.py              # Nội suy theo thời gian, làm mượt dự đoán
 │
 ├── pipeline/                      # Thu thập, tiền xử lý, huấn luyện, augment
 ├── tools/                         # Kiểm tra dữ liệu, đánh giá, phân tích, xuất dữ liệu công khai
-├── tests/                         # Kiểm thử tự động
+├── tests/                         # 25 bài kiểm thử tự động
 │
 ├── models/
-│   ├── sign_language_model.h5     # mô hình LSTM chính thức
-│   └── eval/                      # kết quả LOSO (JSON) và ma trận nhầm lẫn
+│   ├── sign_language_model.h5     # Mô hình LSTM chính thức (43 lớp)
+│   ├── classes.json               # Danh sách 43 lớp ký hiệu dự phòng cho demo
+│   ├── training_history.png       # Đồ thị huấn luyện mô hình chính thức
+│   ├── confusion_matrix.png       # Ma trận nhầm lẫn tổng thể
+│   └── eval/                      # Kết quả LOSO (JSON) và ma trận nhầm lẫn từng fold
 │
-├── results/                       # bằng chứng cho báo cáo (xem results/INDEX.md)
-│   ├── ab_web/                    # nhật ký & đánh giá A/B cổng chuyển động (run1, run2)
-│   ├── analysis/                  # phân tích FPS, suy luận, landmark, độ dài cử chỉ
-│   └── training_logs/             # log huấn luyện LOSO và tiền xử lý
+├── results/                       # Bằng chứng cho báo cáo (xem results/INDEX.md)
+│   ├── ab_web/                    # Nhật ký & đánh giá A/B cổng chuyển động (run1, run2)
+│   ├── analysis/                  # Phân tích FPS, suy luận, landmark, độ dài cử chỉ
+│   └── training_logs/             # Log huấn luyện LOSO và tiền xử lý
 │
-├── static/  templates/            # giao diện web
-├── dataset/                       # chỉ có README: dữ liệu tải riêng (xem mục "Dữ liệu mở")
-├── logs/                          # nhật ký khi chạy web (giữ .gitkeep)
-└── audio/                         # âm thanh tự sinh khi chạy (giữ .gitkeep)            # bản sao lưu README trước dọn dẹp
+├── static/  templates/            # Giao diện web
+├── dataset/                       # Chỉ chứa tài liệu: README.md, DATASET_CARD.md, LICENSE-DATA (dữ liệu tải riêng)
+├── logs/                          # Nhật ký khi chạy web (giữ .gitkeep)
+└── audio/                         # Âm thanh tự sinh khi chạy (giữ .gitkeep)
 ```
 
 ---
@@ -290,7 +311,7 @@ Mọi đóng góp cải tiến kiến trúc hoặc mô hình cần so sánh vớ
 ## 📄 11. Giấy phép (License)
 
 * **Mã nguồn:** Phát hành theo giấy phép [MIT License](LICENSE) (© 2026 Đoàn Duy Bình).
-* **Bộ dữ liệu:** Phát hành theo giấy phép [Creative Commons Attribution 4.0 International (CC BY 4.0)](release_assets/dataset_public/LICENSE-DATA).
+* **Bộ dữ liệu:** Phát hành theo giấy phép [Creative Commons Attribution 4.0 International (CC BY 4.0)](dataset/LICENSE-DATA). Xem chi tiết tại [Thẻ mô tả dữ liệu](dataset/DATASET_CARD.md).
 
 ---
 

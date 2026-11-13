@@ -1,9 +1,10 @@
 """
 tools/export_public_dataset.py
 ==============================
+Công cụ nội bộ dành cho tác giả (cần dữ liệu thô 1662 chiều trong dataset/raw).
 Xuất bộ dữ liệu công khai 258 chiều (loại bỏ hoàn toàn điểm khuôn mặt).
 Đọc từ dataset/raw/ (30, 1662), cắt bằng feature_utils.slice_features() -> (30, 258),
-lưu vào release_assets/dataset_public/<class>/session_0X/sample_XXX.npy dạng float32.
+lưu vào thư mục xuất dạng float32.
 
 Hỗ trợ:
   --input-dir         : Đường dẫn dataset gốc (mặc định: dataset/raw)

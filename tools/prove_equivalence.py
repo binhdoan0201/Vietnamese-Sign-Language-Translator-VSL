@@ -1,8 +1,9 @@
 """
 tools/prove_equivalence.py
 ==========================
+Công cụ nội bộ dành cho tác giả (cần dữ liệu thô 1662 chiều và gói công khai).
 Chứng minh tính tương đương số học 100% giữa việc tiền xử lý từ
-dataset/raw (1662 chiều) và release_assets/dataset_public (258 chiều).
+dataset/raw (1662 chiều) và dữ liệu công khai (258 chiều).
 """
 import os
 import sys

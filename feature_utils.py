@@ -184,9 +184,31 @@ def get_actions(raw_dir="dataset/raw"):
 
     QUAN TRỌNG: mọi file đều phải dùng hàm này để thứ tự class
     luôn khớp nhau giữa preprocess / train / realtime.
+
+    Cơ chế dự phòng (fallback): Nếu raw_dir không tồn tại hoặc không chứa
+    thư mục lớp nào (ví dụ khi chạy demo từ repo sạch chưa tải dữ liệu),
+    hàm sẽ tự động đọc danh sách 43 lớp chuẩn từ models/classes.json.
     """
     import os
-    return sorted([
-        d for d in os.listdir(raw_dir)
-        if os.path.isdir(os.path.join(raw_dir, d))
-    ])
+    import json
+
+    if os.path.exists(raw_dir) and os.path.isdir(raw_dir):
+        classes = sorted([
+            d for d in os.listdir(raw_dir)
+            if os.path.isdir(os.path.join(raw_dir, d))
+        ])
+        if classes:
+            return classes
+
+    # Dự phòng: đọc từ models/classes.json (tính từ vị trí file feature_utils.py)
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    classes_json_path = os.path.join(base_dir, "models", "classes.json")
+    if os.path.exists(classes_json_path):
+        with open(classes_json_path, "r", encoding="utf-8") as f:
+            classes = json.load(f)
+        return sorted(classes)
+
+    raise FileNotFoundError(
+        f"Không tìm thấy thư mục dữ liệu tại '{raw_dir}' "
+        f"và không tìm thấy file dự phòng tại '{classes_json_path}'."
+    )

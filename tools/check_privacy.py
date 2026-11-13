@@ -1,9 +1,12 @@
 """
 tools/check_privacy.py
 ======================
-Kiểm tra bảo vệ quyền riêng tư đối với release_assets/dataset_public:
+Kiểm tra bảo vệ quyền riêng tư đối với bộ dữ liệu công khai (258 chiều):
 1. Đảm bảo mọi file .npy đều đúng shape (30, 258), KHÔNG có file 1662 chiều.
 2. Quét kiểm tra thông tin nhạy cảm: đường dẫn cá nhân (C:\\Users, D:\\), tên ngoài tác giả Đoàn Duy Bình.
+Cách dùng:
+  python tools/check_privacy.py [đường_dẫn_dataset]
+  (Mặc định: dataset/raw)
 """
 import os
 import sys
@@ -11,7 +14,8 @@ import glob
 import numpy as np
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-DATASET_DIR = os.path.join(PROJECT_ROOT, "release_assets", "dataset_public")
+DEFAULT_DATASET_DIR = os.path.join(PROJECT_ROOT, "dataset", "raw")
+DATASET_DIR = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_DATASET_DIR
 
 AUTHORIZED_NAMES = ["Đoàn Duy Bình", "Doan Duy Binh"]
 

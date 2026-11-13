@@ -133,7 +133,7 @@ Get-FileHash -Algorithm SHA256 (Get-ChildItem -Recurse -File | Where-Object {{$_
 
 Hoặc chạy công cụ kiểm tra tự động đi kèm mã nguồn:
 ```powershell
-python tools/verify_dataset.py release_assets/dataset_public
+python tools/verify_dataset.py dataset/raw
 ```
 
 ---
