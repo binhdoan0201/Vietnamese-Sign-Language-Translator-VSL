@@ -270,6 +270,11 @@ SignLanguageTranslator/
 ├── tools/                         # Kiểm tra dữ liệu, đánh giá, phân tích, xuất dữ liệu công khai
 ├── tests/                         # 25 bài kiểm thử tự động
 │
+├── docs/                          # Báo cáo đồ án & slide thuyết trình chính thức
+│   ├── DATTNT_2351220024_Doan_Duy_Binh.pdf  # Báo cáo đồ án chi tiết (90 trang, PDF)
+│   ├── VSL_slides.pptx            # Slide thuyết trình (20 slide, PPTX)
+│   └── README.md                  # Giới thiệu tài liệu đồ án
+│
 ├── models/
 │   ├── sign_language_model.h5     # Mô hình LSTM chính thức (43 lớp)
 │   ├── classes.json               # Danh sách 43 lớp ký hiệu dự phòng cho demo
